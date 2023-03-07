@@ -4,14 +4,16 @@ Personal cheat sheets for various technologies
 
 # Table of Contents
 
-- [linux](linux.md)
-- [tmux](tmux.md)
-- [bash](bash/bash.md)
+- [linux](linux/linux.md)
+- [tmux](linux/tmux.md)
+- [bash](linux/bash.md)
 - [docker](docker/docker.md)
-- [editors/tricks](editors/editor_tricks.md)
+- windows
+  - [windows](windows/windows.md)
+  - [editors](windows/editors.md)
+  - [powershell](windows/powershell.md)
+  - [cmd](windows/cmd.md)
 - [git](git/git.md)
+- [python/scripts](python/scripts.md)
 - [networking](networing/networing.md)
-- [powershell](powershell/powershell.md)
-- [python/scripts](python/python_scripts.md)
-- [windows/cmd](windows/cmd.md)
-- [windows/tricks](windows/windows_tricks.md)
+
