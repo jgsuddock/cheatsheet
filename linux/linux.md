@@ -60,19 +60,22 @@
     - forward char: `Ctrl + F`
     - forward word: `Alt + F`
     - toggle first and current: `Ctrl + XX`
-- cut
-    - delete char: `Ctrl + D`
-    - last word: `Ctrl + W`
-    - word before: `Alt + W`
-    - word after: `Alt + D`
-    - before cursor: `Ctrl + U`
-    - after cursor: `Ctrl + K`
-    - whole line: `Ctrl + E` `Ctrl + U`
-- cancel: `Ctrl + C`
-- paste: `Ctrl + Y`
-- undo: `Ctrl + _`
-- comment line: `Alt + Shift + #`
-- clear terminal: `Ctrl + L`
+- edit
+    - cut next char: `Ctrl + D`
+    - cut to start of word: `Alt + W` or `Ctrl + W`
+    - cut to end of word: `Alt + D`
+    - cut before cursor: `Ctrl + U`
+    - cut after cursor: `Ctrl + K`
+    - cut whole line: `Ctrl + A` `Ctrl + K` or `Ctrl + E` `Ctrl + U`
+    - paste: `Ctrl + Y`
+    - undo: `Ctrl + _`
+    - cancel: `Ctrl + C`
+    - comment line: `Alt + Shift + #`
+- scroll
+    - up one line: `Ctrl + Shift + Up`
+    - up one page: `Ctrl + Shift + PageUp`
+    - down one line: `Ctrl + Shift + Down`
+    - down one page: `Ctrl + Shift + PageDown`
 - search
     - start: `Ctrl + R`
     - select: `Ctrl + J`
@@ -80,6 +83,7 @@
     - stop (blank): `Ctrl + Alt + >`
     - next: `Ctrl + N`
     - previous: `Ctrl + P`
+- clear terminal: `Ctrl + L`
 - command history: `history` or `history 20`
     - reissue last command: `!!` or `sudo !!`
     - reissue command by id: `!1660`
