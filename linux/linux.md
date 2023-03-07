@@ -28,11 +28,11 @@
 - `/srv` - website files or other system served data
 - `/tmp` - temporary files
 - `/usr` - user binaries and read only data
-- `/usr/bin` non-essential binaries
-- `/usr/sbin` non-essential admin binaries
-- `/usr/lib` - non-essential shared libraries
-- `/usr/local` - locally compiled applications
-- `/usr/share` - architecture-independent files
+    - `/usr/bin` non-essential binaries
+    - `/usr/sbin` non-essential admin binaries
+    - `/usr/lib` - non-essential shared libraries
+    - `/usr/local` - locally compiled applications
+    - `/usr/share` - architecture-independent files
 - `/var` - variable sized data (log files, databases, etc)
 
 # troubleshooting
