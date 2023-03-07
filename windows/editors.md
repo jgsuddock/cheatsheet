@@ -64,8 +64,6 @@
 
 ### Keyboard Shortcuts
 
-### Keyboard Shortcuts
-
 | Description | Keyboard Shortcut |
 | --- | --- |
 | Command Palette | `Ctrl + Shift + P` |
