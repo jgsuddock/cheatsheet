@@ -16,8 +16,8 @@
 - `/media` - system mounted devices
 - `/mnt` - user mounted devices
 - `/dev` - device files (includes partitions like `/dev/sda`)
-- `/dev/random` - produce random number
-- `/dev/null` - pipe output to here to discard
+    - `/dev/random` - produce random number
+    - `/dev/null` - pipe output to here to discard
 - `/etc` - system configuration files
 - `/home` - each user’s home directories (protected to that user)
 - `/lib` - essential shared libraries
