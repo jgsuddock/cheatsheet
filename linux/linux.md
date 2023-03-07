@@ -76,17 +76,19 @@
     - up one page: `Ctrl + Shift + PageUp`
     - down one line: `Ctrl + Shift + Down`
     - down one page: `Ctrl + Shift + PageDown`
-- search
-    - start: `Ctrl + R`
-    - select: `Ctrl + J`
-    - cancel: `Ctrl + G`
-    - stop (blank): `Ctrl + Alt + >`
-    - next: `Ctrl + N`
-    - previous: `Ctrl + P`
-- clear terminal: `Ctrl + L`
-- command history: `history` or `history 20`
+- history: `history` or `history 20`
     - reissue last command: `!!` or `sudo !!`
     - reissue command by id: `!1660`
+    - previous: `Up` or `Ctrl + P`
+    - next: `Down` or `Ctrl + N`
+    - end: `Alt + Shift + .`
+    - start: `Alt + Shift + ,`
+    - search up: `Ctrl + R`
+    - search down: `Ctrl + S`
+    - select search: `Ctrl + J`
+    - cancel search: `Ctrl + G`
+    - new empty command: `Ctrl + Alt + >`
+- clear terminal: `Ctrl + L`
 
 # tmux
 
