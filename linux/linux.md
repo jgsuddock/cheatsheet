@@ -130,7 +130,7 @@
 # vim
 
 - open read-only: `vim -R file.txt` or `view file.txt`
-- panes:
+- panes
     - split horizontally: `:split`
     - split vertically: `:vsplit`
     - switch panes: `Ctrl + W`
@@ -145,8 +145,16 @@
     - decrease indent: `<<`
     - increase indent: `>>`
     - run shell command: `:!ls /dir`
-- insert mode
-- visual mode
+- search
+    - start: `/SearchTerm`
+    - next: `N`
+    - previous: `Shift + N`
+    - clear: `:noh`
+- replace
+    - next in line: `:s/SearchTerm/ReplaceTerm`
+    - next in file: `:%s/SearchTerm/ReplaceTerm`
+    - to replace all: use `/g` at end
+    - to confirm: use `/c` at end
 - .vimrc
 
 ```
