@@ -2,7 +2,7 @@
 
 - [VS Code](#vs-code)
 - [Visual Studio](#visual-studio)
-- [Notepad++](#nodepad++)
+- [Notepad++](#nodepad)
 - [PyCharm](#pycharm)
 - [Sublime Text](#sublime-text)
 
