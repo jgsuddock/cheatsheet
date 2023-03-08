@@ -1,10 +1,10 @@
-[cheatsheet](linux.md#vim)
+[linux cheatsheet / vim](linux.md#vim)
 
 # Searching
 
 - To search for a term, type `/SearchTerm`
-- To go to the next result, type `n`
-- To go to the previous result, type `N`
+- To go to the next result, type `N`
+- To go to the previous result, type `Shift + N`
 - To clear the previous search highlighting, type `:noh`
 
 # Multi-line Editing
