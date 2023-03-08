@@ -49,8 +49,10 @@ TODO
 
 TODO
 
-## ToR (Top of Rack) Switch [Tag: Research](https://www.notion.so/Tag-Research-97966e97f68a42a7a46bae928c2455c6)
+## ToR (Top of Rack) Switch
 
 TODO
 
-# CIDR (Classless Inter-Domain Routing) [Tag: Research](https://www.notion.so/Tag-Research-97966e97f68a42a7a46bae928c2455c6)
+# CIDR (Classless Inter-Domain Routing)
+
+TODO
