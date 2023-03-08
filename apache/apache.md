@@ -1,16 +1,18 @@
-# Naming
+# Apache
+
+## Naming
 
 In Debian systems, it is called apache2.
 
 In RedHat systems, it is called httpd.
 
-# Config
+## Config
 
 Default config path: `/etc/httpd/conf/httpd.conf`
 
 Default public path: `/var/www/html`
 
-# Service
+## Service
 
 Reload apache config: `sudo /etc/init.d/apache2 reload` or `sudo service httpd restart` or `sudo httpd -k restart` 
 
