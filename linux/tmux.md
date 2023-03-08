@@ -52,68 +52,37 @@ d  detach session
 
 | Prefix | Command | Action |
 | --- | --- | --- |
-| <prefix> | C | Create Window |
-| <prefix> | W | List Windows |
-| <prefix> | N | Next Window |
-| <prefix> | P | Previous Window |
-| <prefix> | F | Find Window |
-| <prefix> | , | Name Window |
-| <prefix> | & | Kill Window |
-
-```bash
-c  create window
-w  list windows
-n  next window
-p  previous window
-f  find window
-,  name window
-&  kill window
-```
+| `<bind>` | `C` | Create Window |
+| `<bind>` | `W` | List Windows |
+| `<bind>` | `N` | Next Window |
+| `<bind>` | `P` | Previous Window |
+| `<bind>` | `F` | Find Window |
+| `<bind>` | `,` | Name Window |
+| `<bind>` | `&` | Kill Window |
 
 ## Panes (splits)
 
 | Prefix | Command | Action |
 | --- | --- | --- |
-| <prefix> | % | Vertical Split |
-| <prefix> | " | Horizontal Split |
-| <prefix> | O | Swap Panes |
-| <prefix> | X | Kill Pane |
-| <prefix> | + | Break Pane Into Window (e.g. to select text by mouse to copy) |
-| <prefix> | - | Restore Pane From Window |
-| <prefix> | space | Toggle Between Layouts |
-| <prefix> | Q | Show Pane Numbers - When the numbers show up, type the key to goto that pane |
-| <prefix> | { | Move Current Pane Left |
-| <prefix> | } | Move Current Pane Right |
-| <prefix> | Z | Toggle Pane Zoom |
-
-```bash
-%  vertical split
-"  horizontal split
-
-o  swap panes
-q  show pane numbers
-x  kill pane
-+  break pane into window (e.g. to select text by mouse to copy)
--  restore pane from window
-⍽  space - toggle between layouts
-<prefix> q (Show pane numbers, when the numbers show up type the key to goto that pane)
-<prefix> { (Move the current pane left)
-<prefix> } (Move the current pane right)
-<prefix> z toggle pane zoom
-```
+| `<bind>` | `%` | Vertical Split |
+| `<bind>` | `"` | Horizontal Split |
+| `<bind>` | `O` | Swap Panes |
+| `<bind>` | `X` | Kill Pane |
+| `<bind>` | `+` | Break Pane Into Window (e.g. to select text by mouse to copy) |
+| `<bind>` | `-` | Restore Pane From Window |
+| `<bind>` | `space` | Toggle Between Layouts |
+| `<prefix>` | `Q` | Show Pane Numbers - When the numbers show up, type the key to goto that pane |
+| `<prefix>` | `{` | Move Current Pane Left |
+| `<prefix>` | `}` | Move Current Pane Right |
+| `<prefix>` | `Z` | Toggle Pane Zoom |
 
 ## Copy Mode (Navigation)
 
 | Prefix | Command | Action |
 | --- | --- | --- |
-| <prefix> | [ | Enter Copy Mode |
+| `<bind>` | `[` | Enter Copy Mode |
 
-```bash
-<bind key> [  enter navigation mode
-q  quit navigation mode
-```
-
-Use the arrow keys to navigate the buffer. Type `q` to exit copy mode.
+Use the arrow keys to navigate the buffer. Type `Q` to exit copy mode.
 
 ## Sync Panes
 
