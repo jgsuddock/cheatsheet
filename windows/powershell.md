@@ -326,3 +326,14 @@ if ($Server)
 ```
 
 ### Keyboard Shortcuts
+
+| Description | Keyboard Shortcut |
+| --- | --- |
+| Delete the entire current line | `Esc` |
+| Delete all characters at the current position up to the beginning of the line | `Ctrl + Home` |
+| Delete all characters at the current position up to the end of the line | `Ctrl + End` |
+| Show a full list of previously entered commands | `F7` |
+| Move through the whole history list back and forth | `F8` |
+| Select the character to delete up to | `F4` |
+| Clear the command history and reset command count | `Alt + F7` |
+| Select a command by its number in the command history buffer | `F9` |
