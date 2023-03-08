@@ -1,5 +1,27 @@
 # Bash
 
+- [Resources](#resources)
+- [Manuals](#manuals)
+- [Navigation](#navigation)
+- [Permissions](#permissions)
+  - [File/Directory Ownership](#filedirectory-ownership)
+  - [File/Directory Read/Write/Execute Permissions](#filedirectory-readwriteexecute-permissions)
+- [String Manipulation](#string-manipulation)
+  - [grep](#grep)
+  - [sed](#sed)
+  - [awk](#awk)
+- [Storage](#storage)
+  - [Disk / Drive](#disk--drive)
+  - [Directory / File](#directory--file)
+  - [Swap](#swap)
+- [Processes](#processes)
+  - [Cron Jobs](#cron-jobs)
+- [Scripting](#scripting)
+- [Network](#network)
+  - [curl](#curl)
+  - [ssh](#ssh)
+- [Keyboard Shortcuts](#keyboard-shortcuts)
+
 ## Resources
 
 [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
