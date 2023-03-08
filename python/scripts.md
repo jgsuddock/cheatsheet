@@ -51,7 +51,12 @@ print args
 # Open File Dialog
 
 ```python
+import Tkinter, tkFileDialog
 
+root = Tkinter.Tk()
+file_path = tkFileDialog.askopenfilename()
+
+print(file_path)
 ```
 
 # Logging
