@@ -1,6 +1,6 @@
 # Git
 
-# Reverting Commits
+## Reverting Commits
 
 ```bash
 # Undo Local Commits On Current Branch And Return To Origin's Set.
@@ -19,7 +19,7 @@ Think of push/pull as actions with the server and cherry pick/commit/etc as acti
 git checkout -- <file.txt>
 ```
 
-# Diff
+## Diff
 
 ```bash
 # Compare current commit with previous commit
@@ -35,14 +35,14 @@ git diff --name-only ^HEAD HEAD
 git diff --name-only refs/tags/tag-name
 ```
 
-# Diagnostics
+## Diagnostics
 
 ```bash
 # Output Remote Repo Address
 git remote show origin
 ```
 
-# Tags
+## Tags
 
 ```bash
 # List Tags
@@ -79,8 +79,8 @@ git ls-remote origin refs/tags/tag-name
 git ls-remote origin --exit-code origin refs/tags/tag-name
 ```
 
-# Documentation
+## Documentation
 
-## Development Styles
+### Development Styles
 
 [Trunk Based Development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development) | [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
