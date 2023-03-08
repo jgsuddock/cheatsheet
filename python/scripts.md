@@ -210,3 +210,8 @@ os.system('pause >nul')
 ```
 
 # Running a Script
+
+```bash
+#!/bin/bash -xe
+sudo docker run --rm -v "`pwd`:/usr/src" python:3 bash -cx "cd /path/to/script&& python -m venv test-venv&& source test-venv/bin/activate&& pip install -r requirements.txt&& python script_name.py"
+```
