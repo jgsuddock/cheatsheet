@@ -2,13 +2,13 @@
 
 # Clear Screen
 
-```bash
+```cmd
 cls
 ```
 
 # Check for Admin
 
-```bash
+```cmd
 @echo off
 
 net session >nul 2>&1
@@ -24,7 +24,7 @@ pause >nul
 
 # Get Computer Name
 
-```bash
+```cmd
 @echo off
 
 hostname|clip
@@ -39,7 +39,7 @@ pause >nul
 
 # Get IP Address
 
-```bash
+```cmd
 @echo off
 
 ipconfig
@@ -53,7 +53,7 @@ pause >nul
 
 # Loop All Arguments
 
-```bash
+```cmd
 @echo off
 
 goto ARGS
@@ -72,7 +72,7 @@ pause >nul
 
 # Usage
 
-```bash
+```cmd
 @echo off
 
 goto USAGE
@@ -95,3 +95,14 @@ pause >nul
 ```
 
 # User Input For Exit
+```cmd
+@echo off
+
+goto EXIT
+
+:EXIT
+echo[
+echo Press any key to exit...
+pause >nul
+exit /b 0
+```
