@@ -129,12 +129,13 @@
 
 # vim
 
-- open read-only: `vim -R file.txt` or `view file.txt`
+- read-only: `vim -R file.txt` or `view file.txt`
 - panes
     - split horizontally: `:split`
     - split vertically: `:vsplit`
-    - switch panes: `Ctrl + W`
+    - switch panes: `Ctrl + W` + `J` (direction)
 - command mode
+    - repeat: `.`
     - undo: `u`
     - redo: `Ctrl + R`
     - insert mode: `I`
