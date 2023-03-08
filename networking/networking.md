@@ -17,9 +17,9 @@ Two address are reserved in a network.
     - valid 192.168.1.1 only (subnet mask is 255.255.255.255). This node can only talk to itself and the default gateway. Used for loopback, machine isolation, and webservers (multiple sites bound to a specific IPv4 address).
 - CIDR - Classless Inter-Domain Routing
 
-# Network Layers
+## Network Layers
 
-## OSI (Open Systems Interconnection) Model
+### OSI (Open Systems Interconnection) Model
 
 - Layer 7 – **Application**: application protocols like HTTP, SSH and SMTP
 - Layer 6 – **Presentation**: character encoding like ASCII vs UTF-8
@@ -29,7 +29,7 @@ Two address are reserved in a network.
 - Layer 2 – **Data Link**: protocols that connect the physical layer to the network layer, such as Ethernet and ARP
 - Layer 1 – **Physical**: the physical components such as cable wiring and Wi-Fi
 
-## TCP/IP Model
+### TCP/IP Model
 
 - Layer 7 – **Application**: application protocols like HTTP, SSH and SMTP
 - Layer 4 – **Transport**: data transfer protocols like TCP and UDP
@@ -37,22 +37,42 @@ Two address are reserved in a network.
 - Layer 2 – **Data Link**: protocols that connect the physical layer to the network layer, such as Ethernet and ARP
 - Layer 1 – **Physical**: the physical components such as cable wiring and Wi-Fi
 
-# Architecture
+## Architecture
 
-## Spine-and-Leaf
-
-TODO
-
-# Switches
-
-## Fabric Switch
+### Spine-and-Leaf
 
 TODO
 
-## ToR (Top of Rack) Switch
+## Switches
+
+### Fabric Switch
 
 TODO
 
-# CIDR (Classless Inter-Domain Routing)
+### ToR (Top of Rack) Switch
 
 TODO
+
+## CIDR (Classless Inter-Domain Routing)
+
+TODO
+
+## Proxy
+
+### Forward Proxy - Client Side
+
+- User can configure traffic to route through the proxy. It will hide the IP of the user (using the IP of the proxy instead).
+- Uses:
+    - Protects the client’s online identity
+    - Bypasses browsing restrictions
+    - Blocks access to certain content
+- There is also something called a `transparent proxy` which can be implemented on a network to ensure all clients route through it for browsing restrictions, etc.
+
+### Reverse Proxy - Server Side
+
+- NGINX and Cloudflare are both reverse proxies
+- Uses:
+    - Protects a website
+    - Load balancing
+    - Caching
+    - Handling SSL Encryption
