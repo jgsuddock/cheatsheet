@@ -52,6 +52,8 @@
 
 # bash
 
+[bash cheatsheet](bash.md)
+
 - move
     - start: `Ctrl + A`
     - end: `Ctrl + E`
@@ -92,6 +94,8 @@
 
 # tmux
 
+[tmux cheatsheet](tmux.md)
+
 - sessions
     - new: `tmux` or `tmux new -s newname`
     - attach: `tmux a` or `tmux a -t newname`
@@ -129,6 +133,8 @@
 
 # vim
 
+[vim cheatsheet](vim.md)
+
 - read-only: `vim -R file.txt` or `view file.txt`
 - panes
     - split horizontally: `:split`
@@ -164,6 +170,8 @@ hi SpecialKey ctermfg=DarkGray
 ```
 
 # git
+
+[git cheatsheet](../git/git.md)
 
 - clone: `git clone ssh://source.com/repo`
 - branch
