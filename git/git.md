@@ -19,6 +19,17 @@ Think of push/pull as actions with the server and cherry pick/commit/etc as acti
 git checkout -- <file.txt>
 ```
 
+## Merge
+
+```bash
+# Open merge conflict in mergetool
+git mergetool
+
+# Set another mergetool
+git config merge.tool vimdiff
+git config merge.tool bc4
+```
+
 ## Diff
 
 ```bash
