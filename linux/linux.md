@@ -48,6 +48,8 @@
     - list: `mount`
     - add: `mount /dev/sda1`
     - boot mounts: `less /etc/fstab`
+- login history: `last` or `last -n 5`
+- reboot history: `last reboot` or `last reboot -s today` (only today)
 - manuals: `man netstat`
 
 # bash
