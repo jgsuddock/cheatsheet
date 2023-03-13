@@ -41,7 +41,7 @@
 - network
     - ip: `ifconfig` or `ip addr show`
     - dns: `dig google.com`
-    - open ports: `netstat -lnp`
+    - open ports: `netstat -tulpn`
     - test tcp: `nc -vz google.com 80,443`
     - status code: `curl -sS "https://localhost:8080/animals"`
     - download file: `curl -O "https://www.digitalocean.com/robots.txt"`
@@ -51,7 +51,9 @@
     - swap: `swapon --show size`
 - services: `systemctl status nginx` (new) or `service nginx status` (old)
 - processes: `htop` or `ps aux`
-- open ports: `sudo netstat -tulpn`
+- symlinks
+    - file: `ln -s /points/here.txt here.txt`
+    - dir: `ln -sn /points/here here`
 - mounts:
     - list: `mount`
     - add: `mount /dev/sda1`
