@@ -269,9 +269,8 @@ parallel-ssh -i -H 'computername1 computername 2' ls -al ~
 | Move forward one word | `Alt + F` |
 | Toggle between first and current position | `Ctrl + XX` |
 | Delete current character | `Ctrl + D` |
-| Cut the last word | `Ctrl + W` |
-| Cut word before the cursor | `Alt + W` |
-| Cut word after the cursor | `Alt + D` |
+| Cut from cursor to start of word | `Ctrl + W` |
+| Cut from cursor to end of word | `Alt + D` |
 | Cut everything before the cursor | `Ctrl + U` |
 | Cut everything after the cursor | `Ctrl + K` |
 | Clean up the line | `Ctrl + E` `Ctrl + U` |
@@ -286,7 +285,3 @@ parallel-ssh -i -H 'computername1 computername 2' ls -al ~
 | Next command from the History | `Ctrl + N` |
 | Previous command from the History | `Ctrl + P` |
 | Stop Searching History (Return to Blank Line) | `Ctrl + Alt + >` |
-
-- Recall the deleted command: `Ctrl + Y` (then `Alt + Y`)
-- Remove the forward words for example, if you are middle of the command: `Ctrl + K`
-- Remove characters on the left, until the beginning of the word: `Ctrl + W`
