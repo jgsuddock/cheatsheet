@@ -38,9 +38,17 @@
 # troubleshooting
 
 - system info: `uname` or `uname -a`
-- network: `ifconfig` or `ip addr show`
-- disk space: `df -ah`
-- directory size: `du -sh /var/logs`
+- network
+    - ip: `ifconfig` or `ip addr show`
+    - dns: `dig google.com`
+    - open ports: `netstat -lnp`
+    - test tcp: `nc -vz google.com 80,443`
+    - status code: `curl -sS "https://localhost:8080/animals"`
+    - download file: `curl -O "https://www.digitalocean.com/robots.txt"`
+- storage
+    - disk space: `df -ah` or `vgs` (disk space in volume)
+    - directory size: `du -sh /var/logs`
+    - swap: `swapon --show size`
 - services: `systemctl status nginx` (new) or `service nginx status` (old)
 - processes: `htop` or `ps aux`
 - open ports: `sudo netstat -tulpn`
@@ -48,8 +56,13 @@
     - list: `mount`
     - add: `mount /dev/sda1`
     - boot mounts: `less /etc/fstab`
-- login history: `last` or `last -n 5`
-- reboot history: `last reboot` or `last reboot -s today` (only today)
+- permissions
+    - owner: `chown username:group file.txt` or `chown -R username:group directory` (recurse)
+    - read/write: `chmod 755 directory` (rwx > owner|group|others)
+    - check: ls -l `file.txt`
+- history
+    - logins: `last` or `last -n 5`
+    - reboots: `last reboot` or `last reboot -s today` (only today)
 - manuals: `man netstat`
 
 # bash
@@ -66,7 +79,7 @@
     - toggle first and current: `Ctrl + XX`
 - edit
     - cut next char: `Ctrl + D`
-    - cut to start of word: `Alt + W` or `Ctrl + W`
+    - cut to start of word: `Ctrl + W`
     - cut to end of word: `Alt + D`
     - cut before cursor: `Ctrl + U`
     - cut after cursor: `Ctrl + K`
