@@ -6,6 +6,7 @@
 - [Permissions](#permissions)
   - [File/Directory Ownership](#filedirectory-ownership)
   - [File/Directory Read/Write/Execute Permissions](#filedirectory-readwriteexecute-permissions)
+  - [SSH Key Permissions](#ssh-key-permissions)
 - [String Manipulation](#string-manipulation)
   - [grep](#grep)
   - [sed](#sed)
@@ -20,6 +21,9 @@
 - [Network](#network)
   - [curl](#curl)
   - [ssh](#ssh)
+  - [nc](#nc)
+  - [nmap](#nmap)
+  - [netstat](#netstat)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 
 ## Resources
@@ -237,6 +241,14 @@ FOO="${VARIABLE:=default}"  # If variable not set or null, set it to default.
 
 ## Network
 
+```bash
+# Show address mapping on server
+lp addr show
+
+# DNS Lookup Tool
+dig google.com
+```
+
 ### curl
 
 ```bash
@@ -245,18 +257,6 @@ curl -sS "http://localhost:8000/animals")
 
 # Curl - Download file (keeping name)
 curl -O "https://www.digitalocean.com/robots.txt"
-
-# Show address mapping on server
-lp addr show
-
-# DNS Lookup Tool
-dig google.com
-
-# Test TCP Connection On Port 80 & 443
-nc -vz google.com 80,443
-
-# Check if a certain port is open (may need sudo)
-netstat -lnp | grep 8080
 ```
 
 ### ssh
@@ -270,6 +270,25 @@ ssh username@computername.domain.com 'ls -al ~'
 
 # Execute Command on Multiple SSH Clients
 parallel-ssh -i -H 'computername1 computername 2' ls -al ~
+```
+
+### nc
+```bash
+# Test TCP Connection On Port 80 & 443
+nc -vz google.com 80,443
+```
+
+### nmap
+
+```bash
+todo
+```
+
+### netstat
+
+```bash
+# Check if a certain port is open (may need sudo)
+netstat -lnp | grep 8080
 ```
 
 ## Keyboard Shortcuts
