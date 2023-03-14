@@ -89,11 +89,22 @@ sudo chmod 777 directory
 sudo chmod 755 directory
 ```
 
-> drwxrwxrwx
+### SSH Key Permissions
 
-| d | rwx | rwx | rwx |
-| --- | --- | --- | --- |
-| Directory (`d` = is directory, `l` = is link, `-` = is file) | User (Owner) | Group | Others |
+```bash
+# Directory permissions (drwx------)
+sudo chmod 700 ~/.ssh
+# Public key (-rw-r--r--)
+sudo chmod 644 ~/.ssh/id_rsa.pub
+# Private key (-rw-------)
+sudo chmod 600 ~/.ssh/id_rsa
+```
+
+- drwxrwxrwx:
+    - `d` - File Type (`d` = directory, `l` = symlink, `-` = file)
+    - `rwx` - User (Owner)
+    - `rwx` - Group
+    - `rwx` - Others
 
 Read/Write/Execute Permissions For Each Group - Octal Conversions
 
