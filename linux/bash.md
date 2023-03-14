@@ -89,24 +89,17 @@ sudo chmod 777 directory
 sudo chmod 755 directory
 ```
 
-### SSH Key Permissions
+`drwxrwxrwx` ==> `d` - File Type | `rwx` - User/Owner | `rwx` - Group | `rwx` - Others
 
-```bash
-# Directory permissions (drwx------)
-sudo chmod 700 ~/.ssh
-# Public key (-rw-r--r--)
-sudo chmod 644 ~/.ssh/id_rsa.pub
-# Private key (-rw-------)
-sudo chmod 600 ~/.ssh/id_rsa
-```
+File Types:
 
-- drwxrwxrwx:
-    - `d` - File Type (`d` = directory, `l` = symlink, `-` = file)
-    - `rwx` - User (Owner)
-    - `rwx` - Group
-    - `rwx` - Others
+| Key | Type |
+| --- | --- |
+| `d` | Directory |
+| `l` | Symlink |
+| `-` | File |
 
-Read/Write/Execute Permissions For Each Group - Octal Conversions
+Read/Write/Execute Permissions For Each Group - Octal Conversions:
 
 | Octal | String Representation | Permissions |
 | --- | --- | --- |
@@ -118,6 +111,17 @@ Read/Write/Execute Permissions For Each Group - Octal Conversions
 | 5 | r - x | Read and Execute |
 | 6 | r w - | Read and Write |
 | 7 | r w x | Read, Write, and Execute |
+
+### SSH Key Permissions
+
+```bash
+# Directory permissions (drwx------)
+sudo chmod 700 ~/.ssh
+# Public key (-rw-r--r--)
+sudo chmod 644 ~/.ssh/id_rsa.pub
+# Private key (-rw-------)
+sudo chmod 600 ~/.ssh/id_rsa
+```
 
 ## String Manipulation
 
