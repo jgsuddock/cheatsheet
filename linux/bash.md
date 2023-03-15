@@ -186,7 +186,12 @@ du /src/dir_name
   -s # Current directories overall size (i.e. size of `/src/dir_name`)
   -a # Recursive search (all files and directories below)
   --time # Include modification date in the results
-du -a /src/dir_name | sort -n -r | head -n 10 # 10 largest directories within dir_name (recursive)
+  
+# 10 largest directories within dir_name (recursive)
+du -a /src/dir_name | sort -n -r | head -n 10
+
+# Show file sizes at current level
+du -cha --max-depth=1 /var | grep -E "M|G"
 ```
 
 ### Swap
