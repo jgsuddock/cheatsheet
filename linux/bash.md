@@ -1,11 +1,12 @@
 # Bash
 
-- [Linux](linux.md)
 - [Resources](#resources)
 - [Scripting](#scripting)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 
 ## Resources
+
+[Linux Cheatsheet](linux.md) or [Linux Quick Reference](linux_quickref.md)
 
 [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
 
