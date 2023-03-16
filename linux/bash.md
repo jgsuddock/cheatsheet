@@ -6,7 +6,7 @@
 
 ## Resources
 
-[Linux Cheatsheet](linux.md) or [Linux Quick Reference](linux_quickref.md)
+[Linux Cheatsheet](linux.md) or [Linux Quick Reference](quickref.md)
 
 [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
 
