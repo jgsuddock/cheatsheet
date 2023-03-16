@@ -5,6 +5,7 @@ Personal cheat sheets for various technologies
 # Table of Contents
 
 - [linux](linux/linux.md)
+  - [quick ref](linux/linux_quickref.md)
   - [bash](linux/bash.md)
   - [tmux](linux/tmux.md)
   - [vim](linux/vim.md)
