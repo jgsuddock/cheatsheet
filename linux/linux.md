@@ -252,6 +252,9 @@ sudo journalctl --since today
 
 # sshd Daemon Logs
 sudo journalctl -u sshd
+
+# service logs
+sudo journalctl -u tomcat.service
 ```
 
 #### System V
