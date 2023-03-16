@@ -26,11 +26,9 @@
 
 ## Resources
 
-[Bash Cheatsheet](bash.md)
-
-[Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
-
-[Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/)
+- [Bash Cheatsheet](bash.md) or [Linux Quick Reference](linux_quickref.md)
+- [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
+- [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/)
 
 ## Manuals
 
