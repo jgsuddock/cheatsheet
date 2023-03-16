@@ -16,8 +16,8 @@
 - `/media` - system mounted devices
 - `/mnt` - user mounted devices
 - `/dev` - device files (includes partitions like `/dev/sda`)
-    - `/dev/random` - produce random number
-    - `/dev/null` - pipe output to here to discard
+  - `/dev/random` - produce random number
+  - `/dev/null` - pipe output to here to discard
 - `/etc` - system configuration files
 - `/home` - each user’s home directories (protected to that user)
 - `/lib` - essential shared libraries
@@ -28,43 +28,43 @@
 - `/srv` - website files or other system served data
 - `/tmp` - temporary files
 - `/usr` - user binaries and read only data
-    - `/usr/bin` non-essential binaries
-    - `/usr/sbin` non-essential admin binaries
-    - `/usr/lib` - non-essential shared libraries
-    - `/usr/local` - locally compiled applications
-    - `/usr/share` - architecture-independent files
+  - `/usr/bin` non-essential binaries
+  - `/usr/sbin` non-essential admin binaries
+  - `/usr/lib` - non-essential shared libraries
+  - `/usr/local` - locally compiled applications
+  - `/usr/share` - architecture-independent files
 - `/var` - variable sized data (log files, databases, etc)
 
 # troubleshooting
 
 - system info: `uname` or `uname -a`
 - network
-    - ip: `ifconfig` or `ip addr show`
-    - dns: `dig google.com`
-    - open ports: `netstat -tulpn`
-    - test tcp: `nc -vz google.com 80,443`
-    - status code: `curl -sS "https://localhost:8080/animals"`
-    - download file: `curl -O "https://www.digitalocean.com/robots.txt"`
+  - ip: `ifconfig` or `ip addr show`
+  - dns: `dig google.com`
+  - open ports: `netstat -tulpn`
+  - test tcp: `nc -vz google.com 80,443`
+  - status code: `curl -sS "https://localhost:8080/animals"`
+  - download file: `curl -O "https://www.digitalocean.com/robots.txt"`
 - storage
-    - disk space: `df -ah` or `vgs` (disk space in volume)
-    - directory size: `du -sh /var/logs`
-    - swap: `swapon --show size`
+  - disk space: `df -ah` or `vgs` (disk space in volume)
+  - directory size: `du -sh /var/logs`
+  - swap: `swapon --show size`
 - services: `systemctl status nginx` (new) or `service nginx status` (old)
 - processes: `htop` or `ps aux`
 - symlinks
-    - file: `ln -s /points/here.txt here.txt`
-    - dir: `ln -sn /points/here here`
+  - file: `ln -s /points/here.txt here.txt`
+  - dir: `ln -sn /points/here here`
 - mounts:
-    - list: `mount`
-    - add: `mount /dev/sda1`
-    - boot mounts: `less /etc/fstab`
+  - list: `mount`
+  - add: `mount /dev/sda1`
+  - boot mounts: `less /etc/fstab`
 - permissions
-    - owner: `chown username:group file.txt` or `chown -R username:group directory` (recurse)
-    - read/write: `chmod 755 directory` (rwx > owner|group|others)
-    - check: ls -l `file.txt`
+  - owner: `chown username:group file.txt` or `chown -R username:group directory` (recurse)
+  - read/write: `chmod 755 directory` (rwx > owner|group|others)
+  - check: ls -l `file.txt`
 - history
-    - logins: `last` or `last -n 5`
-    - reboots: `last reboot` or `last reboot -s today` (only today)
+  - logins: `last` or `last -n 5`
+  - reboots: `last reboot` or `last reboot -s today` (only today)
 - manuals: `man netstat`
 
 # bash
@@ -72,41 +72,41 @@
 [bash cheatsheet](bash.md)
 
 - move
-    - start: `Ctrl + A`
-    - end: `Ctrl + E`
-    - back char: `Ctrl + B`
-    - back word: `Alt + B`
-    - forward char: `Ctrl + F`
-    - forward word: `Alt + F`
-    - toggle first and current: `Ctrl + XX`
+  - start: `Ctrl + A`
+  - end: `Ctrl + E`
+  - back char: `Ctrl + B`
+  - back word: `Alt + B`
+  - forward char: `Ctrl + F`
+  - forward word: `Alt + F`
+  - toggle first and current: `Ctrl + XX`
 - edit
-    - cut next char: `Ctrl + D`
-    - cut to start of word: `Ctrl + W`
-    - cut to end of word: `Alt + D`
-    - cut before cursor: `Ctrl + U`
-    - cut after cursor: `Ctrl + K`
-    - cut whole line: `Ctrl + A` `Ctrl + K` or `Ctrl + E` `Ctrl + U`
-    - paste: `Ctrl + Y`
-    - undo: `Ctrl + _`
-    - cancel: `Ctrl + C`
-    - comment line: `Alt + Shift + #`
+  - cut next char: `Ctrl + D`
+  - cut to start of word: `Ctrl + W`
+  - cut to end of word: `Alt + D`
+  - cut before cursor: `Ctrl + U`
+  - cut after cursor: `Ctrl + K`
+  - cut whole line: `Ctrl + A` `Ctrl + K` or `Ctrl + E` `Ctrl + U`
+  - paste: `Ctrl + Y`
+  - undo: `Ctrl + _`
+  - cancel: `Ctrl + C`
+  - comment line: `Alt + Shift + #`
 - scroll
-    - up one line: `Ctrl + Shift + Up`
-    - up one page: `Ctrl + Shift + PageUp`
-    - down one line: `Ctrl + Shift + Down`
-    - down one page: `Ctrl + Shift + PageDown`
+  - up one line: `Ctrl + Shift + Up`
+  - up one page: `Ctrl + Shift + PageUp`
+  - down one line: `Ctrl + Shift + Down`
+  - down one page: `Ctrl + Shift + PageDown`
 - history: `history` or `history 20`
-    - reissue last command: `!!` or `sudo !!`
-    - reissue command by id: `!1660`
-    - previous: `Up` or `Ctrl + P`
-    - next: `Down` or `Ctrl + N`
-    - end: `Alt + Shift + .`
-    - start: `Alt + Shift + ,`
-    - search up: `Ctrl + R`
-    - search down: `Ctrl + S`
-    - select search: `Ctrl + J`
-    - cancel search: `Ctrl + G`
-    - new empty command: `Ctrl + Alt + >`
+  - reissue last command: `!!` or `sudo !!`
+  - reissue command by id: `!1660`
+  - previous: `Up` or `Ctrl + P`
+  - next: `Down` or `Ctrl + N`
+  - end: `Alt + Shift + .`
+  - start: `Alt + Shift + ,`
+  - search up: `Ctrl + R`
+  - search down: `Ctrl + S`
+  - select search: `Ctrl + J`
+  - cancel search: `Ctrl + G`
+  - new empty command: `Ctrl + Alt + >`
 - clear terminal: `Ctrl + L`
 
 # tmux
@@ -114,39 +114,39 @@
 [tmux cheatsheet](tmux.md)
 
 - sessions
-    - new: `tmux` or `tmux new -s newname`
-    - attach: `tmux a` or `tmux a -t newname`
-    - de-attach: `<Ctrl + B>` `D`
-    - kill: `tmux kill-session -t newname`
-    - list: `tmux ls`
+  - new: `tmux` or `tmux new -s newname`
+  - attach: `tmux a` or `tmux a -t newname`
+  - de-attach: `<Ctrl + B>` `D`
+  - kill: `tmux kill-session -t newname`
+  - list: `tmux ls`
 - windows (include bind `Ctrl + B`)
-    - new: `C`
-    - next: `N`
-    - previous: `P`
-    - list: `W`
-    - find: `F`
-    - name: `,`
-    - kill: `&`
+  - new: `C`
+  - next: `N`
+  - previous: `P`
+  - list: `W`
+  - find: `F`
+  - name: `,`
+  - kill: `&`
 - panes (include bind `Ctrl + B`)
-    - new (vertical): `%`
-    - new (horizontal): `"`
-    - swap: `O`
-    - kill: `X`
-    - break into window: `+`
-    - restore from window: `-`
-    - toggle layout: `space`
-    - show pane numbers: `Q`
-    - move left: `{`
-    - move right: `}`
-    - zoom: `Z`
+  - new (vertical): `%`
+  - new (horizontal): `"`
+  - swap: `O`
+  - kill: `X`
+  - break into window: `+`
+  - restore from window: `-`
+  - toggle layout: `space`
+  - show pane numbers: `Q`
+  - move left: `{`
+  - move right: `}`
+  - zoom: `Z`
 - edit
-    - enter: `Ctrl + B` `[`
-    - exit: `Q`
-    - move: `arrow keys`
-    - select
-        - start: `Ctrl + S`
-        - copy: `Alt + W`
-        - clear: `Ctrl + G`
+  - enter: `Ctrl + B` `[`
+  - exit: `Q`
+  - move: `arrow keys`
+  - select
+    - start: `Ctrl + S`
+    - copy: `Alt + W`
+    - clear: `Ctrl + G`
 
 # vim
 
@@ -154,31 +154,31 @@
 
 - read-only: `vim -R file.txt` or `view file.txt`
 - panes
-    - split horizontally: `:split`
-    - split vertically: `:vsplit`
-    - switch panes: `Ctrl + W` + `J` (direction)
+  - split horizontally: `:split`
+  - split vertically: `:vsplit`
+  - switch panes: `Ctrl + W` + `J` (direction)
 - command mode
-    - repeat: `.`
-    - undo: `u`
-    - redo: `Ctrl + R`
-    - insert mode: `I`
-        - edit start of line: `Shift + I`
-        - edit end of line: `Shift + A`
-    - visual mode: `V`
-    - visual block mode: `Ctrl + V`
-    - decrease indent: `<<`
-    - increase indent: `>>`
-    - run shell command: `:!ls /dir`
+  - repeat: `.`
+  - undo: `u`
+  - redo: `Ctrl + R`
+  - insert mode: `I`
+    - edit start of line: `Shift + I`
+    - edit end of line: `Shift + A`
+  - visual mode: `V`
+  - visual block mode: `Ctrl + V`
+  - decrease indent: `<<`
+  - increase indent: `>>`
+  - run shell command: `:!ls /dir`
 - search
-    - start: `/SearchTerm`
-    - next: `N`
-    - previous: `Shift + N`
-    - clear: `:noh`
+  - start: `/SearchTerm`
+  - next: `N`
+  - previous: `Shift + N`
+  - clear: `:noh`
 - replace
-    - next in line: `:s/SearchTerm/ReplaceTerm`
-    - next in file: `:%s/SearchTerm/ReplaceTerm`
-    - to replace all: use `/g` at end
-    - to confirm: use `/c` at end
+  - next in line: `:s/SearchTerm/ReplaceTerm`
+  - next in file: `:%s/SearchTerm/ReplaceTerm`
+  - to replace all: use `/g` at end
+  - to confirm: use `/c` at end
 - .vimrc
 
 ```
