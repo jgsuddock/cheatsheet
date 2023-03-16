@@ -218,6 +218,57 @@ htop
 ps -ef | grep tomcat
 ```
 
+### Init System
+
+#### SystemD
+
+Most distributions are moving towards this
+
+[Documentation](https://access.redhat.com/articles/754933)
+
+[Fedora Documentation](https://fedoraproject.org/wiki/Systemd#systemd_documentation)
+
+[RHEL Documentation](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/chap-Managing_Services_with_systemd.html)
+
+```bash
+# List all services
+sudo systemctl --all list-unit-files --type=service
+
+# List all services (directory)
+ls /lib/systemd/system/*.service /etc/systemd/system/*.service
+```
+
+#### System V
+
+Older distributions use this
+
+[Documentation](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/s1-boot-init-shutdown-sysv.html)
+
+```bash
+# List all services
+sudo service --status-all
+
+# List all init scripts
+ls /etc/init.d/
+
+# List all run-level symlinks
+ls /etc/rc*.d/
+```
+
+#### Upstart
+
+Older debian instances use this
+
+[Documentation](http://upstart.ubuntu.com/cookbook/)
+
+```bash
+# List all services
+sudo initctl list
+
+# List all services and their config
+sudo initctl list | awk '{ print $1 }' | xargs -n1 initctl show-config
+```
+
 ## Cron Jobs
 
 ```bash
