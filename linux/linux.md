@@ -240,7 +240,23 @@ ls /lib/systemd/system/*.service /etc/systemd/system/*.service
 
 # View tomcat service config
 vim /etc/systemd/system/tomcat.service
+
+# Start service
+sudo systemctl start tomcat.service
 ```
+
+Enabling/Disabling
+```bash
+# Enable/Disable service
+sudo systemctl enable tomcat.service
+
+# Check if service enabled
+sudo systemctl is-enabled tomcat.service
+```
+
+`systemctl enable` works by manipulating symlinks in `/etc/systemd/system/` (for system daemons). When you `enable` a service, it looks at the `WantedBy` lines in the `[Install]` section, and plops symlinks in those `.wants` directories.
+
+`systemctl disable` does the opposite.
 
 Logging
 ```bash
