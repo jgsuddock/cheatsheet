@@ -1,4 +1,4 @@
-# linux cheatsheet
+# linux quick reference
 
 - [directories](#directories)
 - [troubleshooting](#troubleshooting)
