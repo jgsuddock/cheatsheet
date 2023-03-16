@@ -237,6 +237,21 @@ sudo systemctl --all list-unit-files --type=service
 
 # List all services (directory)
 ls /lib/systemd/system/*.service /etc/systemd/system/*.service
+
+# View tomcat service config
+vim /etc/systemd/system/tomcat.service
+```
+
+Logging
+```bash
+# View All Logs
+sudo journalctl
+
+# Today Only
+sudo journalctl --since today
+
+# sshd Daemon Logs
+sudo journalctl -u sshd
 ```
 
 #### System V
@@ -254,6 +269,9 @@ ls /etc/init.d/
 
 # List all run-level symlinks
 ls /etc/rc*.d/
+
+# View tomcat service config
+vim /etc/inti.d/tomcat
 ```
 
 #### Upstart
