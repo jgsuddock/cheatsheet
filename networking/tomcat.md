@@ -1,4 +1,4 @@
-# tomcat cheatsheet
+# Tomcat
 
 - [References](#references)
 
