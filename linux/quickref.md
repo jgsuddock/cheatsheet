@@ -9,6 +9,8 @@
 
 # directories
 
+[linux cheatsheet](linux.md)
+
 - `/bin` - essential system binaries
 - `/sbin` - essential system admin binaries
 - `/boot` - files for booting system
@@ -36,6 +38,8 @@
 - `/var` - variable sized data (log files, databases, etc)
 
 # troubleshooting
+
+[linux cheatsheet](linux.md)
 
 - system info: `uname` or `uname -a`
 - network
