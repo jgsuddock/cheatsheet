@@ -10,6 +10,7 @@
   - checkout: `git checkout branch-name`
   - reset: `git reset --hard origin/branch-name`
 - commits
+  - tree view: `git log --graph`
   - reset: `git checkout -- file.txt`
 - tags
   - list: `git tag -l` or `git tag -l "v1.*"`
