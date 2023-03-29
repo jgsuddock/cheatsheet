@@ -23,7 +23,9 @@
   - disk space: `df -ah` or `vgs` (disk space in volume)
   - directory size: `du -sh /var/logs`
   - swap: `swapon --show size`
-- services: `systemctl status nginx` (new) or `service nginx status` (old)
+- services
+  - status: `systemctl status nginx` (new) or `service nginx status` (old)
+  - logging: `journalctl -u tomcat.service --since today`
 - processes: `htop` or `ps aux`
 - symlinks
   - file: `ln -s /points/here.txt here.txt`
