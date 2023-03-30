@@ -26,6 +26,7 @@
 - services
   - status: `systemctl status nginx` (new) or `service nginx status` (old)
   - logging: `journalctl -u tomcat.service --since today`
+  - cronjob edit: `crontab -e`
 - processes: `htop` or `ps aux`
 - symlinks
   - file: `ln -s /points/here.txt here.txt`
