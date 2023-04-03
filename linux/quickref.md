@@ -22,6 +22,7 @@
 - storage
   - disk space: `df -ah` or `vgs` (disk space in volume)
   - directory size: `du -sh /var/logs`
+  - directory size (breakout): `du -ah --max-depth=1 /var`
   - swap: `swapon --show size`
 - services
   - status: `systemctl status nginx` (new) or `service nginx status` (old)
