@@ -29,6 +29,9 @@
   - logging: `journalctl -u tomcat.service --since today`
   - cronjob edit: `crontab -e`
 - processes: `htop` or `ps aux`
+- files
+  - search (files older than 60 min): `find . -mmin +60 -type f`
+  - search and list: `find . -type f -exec ls -l {} +`
 - symlinks
   - file: `ln -s /points/here.txt here.txt`
   - dir: `ln -sn /points/here here`
@@ -39,7 +42,7 @@
 - permissions
   - owner: `chown username:group file.txt` or `chown -R username:group directory` (recurse)
   - read/write: `chmod 755 directory` (rwx > owner|group|others)
-  - check: ls -l `file.txt`
+  - check: `ls -l file.txt`
 - history
   - logins: `last` or `last -n 5`
   - reboots: `last reboot` or `last reboot -s today` (only today)
