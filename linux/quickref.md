@@ -30,6 +30,7 @@
   - cronjob edit: `crontab -e`
 - processes: `htop` or `ps aux`
 - files
+  - search: `find . -type f -name *.jpg`
   - search (files older than 60 min): `find . -mmin +60 -type f`
   - search and list: `find . -type f -exec ls -l {} +`
 - symlinks
