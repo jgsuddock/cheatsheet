@@ -16,6 +16,7 @@
   - [Directory / File](#directory--file)
   - [Swap](#swap)
 - [Processes](#processes)
+  - [top / htop](#top--htop)
   - [Init System](#init-system)
   - [Cron Jobs](#cron-jobs)
 - [Network](#network)
@@ -219,6 +220,36 @@ htop
 
 # Find the tomcat process running
 ps -ef | grep tomcat
+```
+
+### top / htop
+
+```bash
+top
+```
+
+Add/Rearrange Fields:
+
+1. Press `F` to display fields
+2. Navigate to the desired field using arrow keys
+3. Hit `Space` to enable (becomes proceeded by an astrisk `*`)
+4. Press `Right Arrow` key to move the field to the desired location
+5. Press `Q` to exit back to top view
+
+Sort By Memory:
+
+1. Press `Shift + M` or use the argument `top -o %MEM`
+
+Sort By Other Field:
+
+1. Press `Shift + F`
+2. Highlight the deisred field using arrow keys
+3. Press `S` to select choice
+4. Press `Enter` to save selection
+5. Press `Q` to exit interactive menud
+
+```bash
+htop
 ```
 
 ### Init System
