@@ -47,6 +47,7 @@
 - history
   - logins: `last` or `last -n 5`
   - reboots: `last reboot` or `last reboot -s today` (only today)
+  - uptime: `uptime`
 - manuals: `man netstat`
 
 # directories
