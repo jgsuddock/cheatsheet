@@ -215,42 +215,34 @@ sudo swapon -a
 ## Processes
 
 ```bash
-# Process Manager
-htop
-
 # Find the tomcat process running
 ps -ef | grep tomcat
 ```
 
 ### top / htop
 
-```bash
-top
-```
-
-Add/Rearrange Fields:
-
-1. Press `F` to display fields
-2. Navigate to the desired field using arrow keys
-3. Hit `Space` to enable (becomes proceeded by an astrisk `*`)
-4. Press `Right Arrow` key to move the field to the desired location
-5. Press `Q` to exit back to top view
-
-Sort By Memory:
-
-1. Press `Shift + M` or use the argument `top -o %MEM`
-
-Sort By Other Field:
-
-1. Press `Shift + F`
-2. Highlight the deisred field using arrow keys
-3. Press `S` to select choice
-4. Press `Enter` to save selection
-5. Press `Q` to exit interactive menud
+top and htop are process managerers for linux. `htop` is a newer version and easier to use. `top` typically comes preinstalled on most systems.
 
 ```bash
 htop
 ```
+
+```bash
+top
+```
+
+Add/Rearrange/Sort Fields
+
+1. Press `F` to display field listing
+2. Press `Up Arrow` or `Down Arrow` to move cursor.
+3. Press `Space` to enable/disable field (enabled fields are proceeded by an astrisk `*`).
+4. Press `Right Arrow` and then use arrow keys to rearrange field. Press `Left Arrow` to keep selection.
+5. Press `S` to sort by that desired field.
+6. Press `Q` to exit back to top view.
+
+Sort By Memory:
+
+1. Press `Shift + M` or use the argument `top -o %MEM`
 
 ### Init System
 
