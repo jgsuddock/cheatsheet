@@ -57,11 +57,6 @@ alias ll='ls -l'
 val=$($1)
 eval res='${val}'
 
-# Find file recursively in directory that contains a certain string
-find /path/to/dir -type f -name "*.xml" | xargs egrep -i 'TEXT_TO_FIND'
-grep -Rnw '/path/to/dir/' -e 'TEXT_TO_FIND'
-grep --include=\*.{c,h} -Rnw '/path/to/dir/' -e "TEXT_TO_FIND"
-
 # Print XML File By Cleaning Up And Sorting Tags
 cat /path/to/file.xml | sed -re 's/>/>\n/g' | sort -u | less
 
@@ -139,6 +134,11 @@ grep "substring"
 
 # This will return the first row in a list of rows.
 head -1
+
+# Find file recursively in directory that contains a certain string
+find /path/to/dir -type f -name "*.xml" | xargs egrep -i 'TEXT_TO_FIND'
+grep -Rnw '/path/to/dir/' -e 'TEXT_TO_FIND'
+grep --include=\*.{c,h} -Rnw '/path/to/dir/' -e "TEXT_TO_FIND"
 ```
 
 ### sed
