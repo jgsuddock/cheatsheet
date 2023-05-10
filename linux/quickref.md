@@ -29,10 +29,13 @@
   - logging: `journalctl -u tomcat.service --since today`
   - cronjob edit: `crontab -e`
 - processes: `htop` or `ps aux`
-- files
-  - search: `find . -name *.jpg`
-  - search (files older than 60 min): `find . -mmin +60 -type f`
-  - search and list: `find . -type f -exec ls -l {} +`
+- search
+  - file names: `find . -name *.jpg`
+  - files older than 60 min: `find . -mmin +60 -type f`
+  - list matching file names: `find . -type f -exec ls -l {} +`
+  - files containing keyword: `grep -Rnw '/path/to/dir' -e 'TEXT_TO_FIND'`
+  - files containing keyword: `grep --include=\*.{c,h} -Rnw '/path/to/dir' -e 'TEXT_TO_FIND'`
+  - files containing keyword: `find . -type f -name "*.xml" | xargs egrep -i 'TEXT_TO_FIND'`
 - symlinks
   - file: `ln -s /points/here.txt here.txt`
   - dir: `ln -sn /points/here here`
