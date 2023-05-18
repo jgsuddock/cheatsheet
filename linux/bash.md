@@ -30,6 +30,27 @@ FOO="${VARIABLE:-default}"  # If variable not set or null, use default.
 FOO="${VARIABLE:=default}"  # If variable not set or null, set it to default.
 ```
 
+### Silence Output
+
+```bash
+# Silence stdout
+command 1> /dev/null
+#   or
+command > /dev/null
+
+# Silence stderr
+command 2> /dev/null
+
+# Send stderr to stdout
+command 2>&1
+
+# Silence stdout and stderr (this sends stderr to stdout)
+command > /dev/null 2>&1
+
+# Silence stdout and stderr - Bash (>= v4) shortcut
+command &> /dev/null
+```
+
 ## Keyboard Shortcuts
 
 | Action | Keyboard Shortcut |
