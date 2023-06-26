@@ -51,6 +51,8 @@
   - logins: `last` or `last -n 5`
   - reboots: `last reboot` or `last reboot -s today` (only today)
   - uptime: `uptime`
+- compress
+  - gzip: `tar -czvf archive.tar.gz /path/to/directory-or-file`
 - manuals: `man netstat`
 
 # directories
