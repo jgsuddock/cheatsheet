@@ -1,4 +1,4 @@
-[linux cheatsheet / vim](linux.md#vim)
+[linux cheatsheet / vim](quickref.md#vim)
 
 # Searching
 
