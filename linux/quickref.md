@@ -26,7 +26,7 @@
   - swap: `swapon --show size`
 - services
   - status: `systemctl status nginx` (new) or `service nginx status` (old)
-  - logging: `journalctl -u tomcat.service --since today`
+  - logging: `journalctl -u tomcat.service --since today` or `journalctl _PID=1234`
   - cronjob edit: `crontab -e`
 - processes: `htop` or `ps aux`
 - search
