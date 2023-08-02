@@ -26,6 +26,7 @@
   - [nc](#nc)
   - [nmap](#nmap)
   - [netstat](#netstat)
+- [Directories](#directories)
 
 ## Resources
 
@@ -494,3 +495,31 @@ Expression                   Means
 0 12 1/5 * ?	             Fire at 12 PM (noon) every 5 days every month, starting on the first day of the month
 11 11 11 11 ?	             Fire every November 11 at 11:11 AM
 ```
+
+# Directories
+
+- `/bin` - essential system binaries
+- `/sbin` - essential system admin binaries
+- `/boot` - files for booting system
+- `/cdrom` - historical device mount location
+- `/media` - system mounted devices
+- `/mnt` - user mounted devices
+- `/dev` - device files (includes partitions like `/dev/sda`)
+  - `/dev/random` - produce random number
+  - `/dev/null` - pipe output to here to discard
+- `/etc` - system configuration files
+- `/home` - each user’s home directories (protected to that user)
+- `/lib` - essential shared libraries
+- `/opt` - optional system packages
+- `/proc` - kernel and process files
+- `/root` - root user’s home directory
+- `/run` - application transient file storage (sockets, process IDs, etc)
+- `/srv` - website files or other system served data
+- `/tmp` - temporary files
+- `/usr` - user binaries and read only data
+  - `/usr/bin` non-essential binaries
+  - `/usr/sbin` non-essential admin binaries
+  - `/usr/lib` - non-essential shared libraries
+  - `/usr/local` - locally compiled applications
+  - `/usr/share` - architecture-independent files
+- `/var` - variable sized data (log files, databases, etc)
