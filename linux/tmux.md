@@ -1,5 +1,7 @@
 # tmux
 
+- [Commands](#commands)
+- [Getting Started](#getting-started)
 - [Bind Key](#bind-key)
 - [Sessions](#sessions)
 - [Windows (tabs)](#windows-tabs)
@@ -11,6 +13,45 @@
 - [Misc](#misc)
 - [Configurations Options](#configurations-options)
 - [Resources](#resources)
+
+## Commands
+
+- sessions
+  - new: `tmux` or `tmux new -s newname`
+  - attach: `tmux a` or `tmux a -t newname`
+  - de-attach: `<Ctrl + B>` `D`
+  - kill: `tmux kill-session -t newname`
+  - list: `tmux ls`
+- windows (include bind `Ctrl + B`)
+  - new: `C`
+  - next: `N`
+  - previous: `P`
+  - list: `W`
+  - find: `F`
+  - name: `,`
+  - kill: `&`
+- panes (include bind `Ctrl + B`)
+  - new (vertical): `%`
+  - new (horizontal): `"`
+  - swap: `O`
+  - kill: `X`
+  - break into window: `+`
+  - restore from window: `-`
+  - toggle layout: `space`
+  - show pane numbers: `Q`
+  - move left: `{`
+  - move right: `}`
+  - zoom: `Z`
+- edit
+  - enter: `Ctrl + B` `[`
+  - exit: `Q`
+  - move: `arrow keys`
+  - select
+    - start: `Ctrl + S`
+    - copy: `Alt + W`
+    - clear: `Ctrl + G`
+   
+## Getting Started
 
 ```bash
 # Start new
