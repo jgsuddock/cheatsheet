@@ -1,7 +1,7 @@
 # Linux
 
+- [Cheatsheet](#cheatsheet)
 - [Resources](#resources)
-- [Troubleshooting](#troubleshooting)
 - [Manuals](#manuals)
 - [Navigation](#navigation)
 - [Permissions](#permissions)
@@ -28,13 +28,7 @@
   - [netstat](#netstat)
 - [Directories](#directories)
 
-## Resources
-
-- [Bash Cheatsheet](bash.md) or [Linux Quick Reference](quickref.md)
-- [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
-- [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/)
-
-## Troubleshooting
+## Cheatsheet
 
 - system info: `uname` or `uname -a`
 - network
@@ -80,6 +74,12 @@
   - compress: `tar -czvf archive.tar.gz /path/to/directory-or-file`
   - extract: `tar -xvf archive.tar.gz -C /path/to/new-directory-or-file`
 - manuals: `man netstat`
+
+## Resources
+
+- [Bash Cheatsheet](bash.md) or [Linux Quick Reference](quickref.md)
+- [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
+- [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/)
 
 ## Manuals
 
