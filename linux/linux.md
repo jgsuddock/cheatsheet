@@ -1,6 +1,7 @@
 # Linux
 
 - [Resources](#resources)
+- [Troubleshooting](#troubleshooting)
 - [Manuals](#manuals)
 - [Navigation](#navigation)
 - [Permissions](#permissions)
@@ -31,6 +32,53 @@
 - [Bash Cheatsheet](bash.md) or [Linux Quick Reference](quickref.md)
 - [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
 - [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/)
+
+# Troubleshooting
+
+- system info: `uname` or `uname -a`
+- network
+  - ip: `ifconfig` or `ip addr show`
+  - dns: `dig google.com`
+  - open ports: `netstat -tulpn`
+  - test tcp: `nc -vz google.com 80,443`
+  - status code: `curl -sS "https://localhost:8080/animals"`
+  - download file: `curl -O "https://www.digitalocean.com/robots.txt"`
+- storage
+  - disk space: `df -ah` or `vgs` (disk space in volume)
+  - directory size: `du -sh /var/logs`
+  - directory size (breakout): `du -ah --max-depth=1 /var`
+  - swap: `swapon --show size`
+- services
+  - status: `systemctl status nginx` (new) or `service nginx status` (old)
+  - logging: `journalctl -u tomcat.service --since today` or `journalctl _PID=1234`
+  - cronjob edit: `crontab -e`
+- processes: `htop` or `ps aux`
+- search
+  - file names: `find . -name *.jpg`
+  - files older than 60 min: `find . -mmin +60 -type f`
+  - list matching file names: `find . -type f -exec ls -l {} +`
+  - files containing keyword: `grep -Rnw '/path/to/dir' -e 'TEXT_TO_FIND'`
+  - files containing keyword: `grep --include=\*.{c,h} -Rnw '/path/to/dir' -e 'TEXT_TO_FIND'`
+  - files containing keyword: `find . -type f -name "*.xml" | xargs egrep -i 'TEXT_TO_FIND'`
+- symlinks
+  - file: `ln -s /points/here.txt here.txt`
+  - dir: `ln -sn /points/here here`
+- mounts:
+  - list: `mount`
+  - add: `mount /dev/sda1`
+  - boot mounts: `less /etc/fstab`
+- permissions
+  - owner: `chown username:group file.txt` or `chown -R username:group directory` (recurse)
+  - read/write: `chmod 755 directory` (rwx > owner|group|others)
+  - check: `ls -l file.txt`
+- history
+  - logins: `last` or `last -n 5`
+  - reboots: `last reboot` or `last reboot -s today` (only today)
+  - uptime: `uptime`
+- gzip
+  - compress: `tar -czvf archive.tar.gz /path/to/directory-or-file`
+  - extract: `tar -xvf archive.tar.gz -C /path/to/new-directory-or-file`
+- manuals: `man netstat`
 
 ## Manuals
 
