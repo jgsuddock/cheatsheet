@@ -1,12 +1,12 @@
 [linux cheatsheet / vim](quickref.md#vim)
 
-- [Commands](#commands)
+- [Cheatsheet](#cheatsheet)
 - [Searching](#searching)
 - [Multi-line Editing](#multi-line-editing)
 - [Read-Only Mode](#read-only-mode)
-- [Other Commands](#other-commands)
+- [Commands](#commands)
 
-## Commands
+## Cheatsheet
 
 - read-only: `vim -R file.txt` or `view file.txt`
 - panes
