@@ -1,19 +1,11 @@
 # Bash
 
+- [Cheatsheet](#cheatsheet)
 - [Resources](#resources)
-- [Commands](#commands)
 - [Scripting](#scripting)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 
-## Resources
-
-[Linux Cheatsheet](linux.md) or [Linux Quick Reference](quickref.md)
-
-[Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
-
-[Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/)
-
-## Commands
+## Cheatsheet
 
 - move
   - start: `Ctrl + A`
@@ -52,6 +44,14 @@
   - cancel search: `Ctrl + G`
   - new empty command: `Ctrl + Alt + >`
 - clear terminal: `Ctrl + L`
+
+## Resources
+
+[Linux Cheatsheet](linux.md) or [Linux Quick Reference](quickref.md)
+
+[Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
+
+[Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/)
 
 ## Scripting
 
