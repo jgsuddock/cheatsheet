@@ -1,4 +1,4 @@
-# Vim
+# vim
 
 - [Cheatsheet](#cheatsheet)
 - [Searching](#searching)
