@@ -34,7 +34,7 @@
 - [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
 - [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/)
 
-# Troubleshooting
+## Troubleshooting
 
 - system info: `uname` or `uname -a`
 - network
@@ -496,7 +496,7 @@ Expression                   Means
 11 11 11 11 ?	             Fire every November 11 at 11:11 AM
 ```
 
-# Directories
+## Directories
 
 - `/bin` - essential system binaries
 - `/sbin` - essential system admin binaries
