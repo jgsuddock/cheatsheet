@@ -1,5 +1,3 @@
-[linux cheatsheet / vim](quickref.md#vim)
-
 - [Cheatsheet](#cheatsheet)
 - [Searching](#searching)
 - [Multi-line Editing](#multi-line-editing)
