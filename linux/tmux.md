@@ -1,6 +1,6 @@
 # tmux
 
-- [Commands](#commands)
+- [Cheatsheet](#cheatsheet)
 - [Getting Started](#getting-started)
 - [Bind Key](#bind-key)
 - [Sessions](#sessions)
@@ -14,7 +14,7 @@
 - [Configurations Options](#configurations-options)
 - [Resources](#resources)
 
-## Commands
+## Cheatsheet
 
 - sessions
   - new: `tmux` or `tmux new -s newname`
