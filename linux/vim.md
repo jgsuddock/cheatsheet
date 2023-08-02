@@ -1,3 +1,5 @@
+# Vim
+
 - [Cheatsheet](#cheatsheet)
 - [Searching](#searching)
 - [Multi-line Editing](#multi-line-editing)
