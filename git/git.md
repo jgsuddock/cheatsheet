@@ -1,13 +1,23 @@
 # Git
 
+- [Cheatsheet](#cheatsheet)
+- [Resources](#resources)
+- [Reverting Commits](#reverting-commits)
+- [Merge](#merge)
+- [Diff](#diff)
+- [Diagnostics](#diagnostics)
+- [Tags](#tags)
+
 ## Cheatsheet
 
+- clone: `git clone ssh://source.com/repo`
 - remotes
   - list current: `git remote -v`
 - branches
   - list: `git branch` or `git branch -r` (remote)
-  - delete: `git branch -d branch-name`
   - checkout: `git checkout branch-name`
+  - new: `git branch branch-name` or `git checkout -b branch-name`
+  - delete: `git branch -d branch-name`
   - reset: `git reset --hard origin/branch-name`
 - commits
   - tree view: `git log --graph`
@@ -17,11 +27,17 @@
   - pull: `git fetch --tags` or `git fetch --tags -f` (override local)
   - push: `git push origin refs/tags/tag-name`
 - diff
-  - diff: `git diff` or `git difftool`
-  - current commit | previous commit: `git diff ^HEAD HEAD` or `git diff ^HEAD HEAD file.txt`
+  - repo: `git diff` or `git difftool`
+  - current | commit: `git diff HEAD`
+  - commit | prev commit: `git diff ^HEAD HEAD`
+  - file: `git diff ^HEAD HEAD file.txt`
   - filename only: `git diff --name-only ^HEAD HEAD`
 - merge
   - resolve merge: `git mergetool`
+
+## Resources
+
+Development Styles - [Trunk Based Development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development) | [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 ## Reverting Commits
 
@@ -112,9 +128,3 @@ git ls-remote origin refs/tags/tag-name
 # Check If Tag Exists On Remote (Set Exit Code For CI/CD)
 git ls-remote origin --exit-code origin refs/tags/tag-name
 ```
-
-## Documentation
-
-### Development Styles
-
-[Trunk Based Development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development) | [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
