@@ -4,46 +4,8 @@
 - [directories](linux.md#directories)
 - [bash](bash.md#commands)
 - [tmux](tmux.md#tmux)
-- [vim](#vim)
+- [vim](vim.md#vim)
 - [git](#git)
-
-# vim
-
-[vim cheatsheet](vim.md)
-
-- read-only: `vim -R file.txt` or `view file.txt`
-- panes
-  - split horizontally: `:split`
-  - split vertically: `:vsplit`
-  - switch panes: `Ctrl + W` + `J` (direction)
-- command mode
-  - repeat: `.`
-  - undo: `u`
-  - redo: `Ctrl + R`
-  - insert mode: `I`
-    - edit start of line: `Shift + I`
-    - edit end of line: `Shift + A`
-  - visual mode: `V`
-  - visual block mode: `Ctrl + V`
-  - decrease indent: `<<`
-  - increase indent: `>>`
-  - run shell command: `:!ls /dir`
-- search
-  - start: `/SearchTerm`
-  - next: `N`
-  - previous: `Shift + N`
-  - clear: `:noh`
-- replace
-  - next in line: `:s/SearchTerm/ReplaceTerm`
-  - next in file: `:%s/SearchTerm/ReplaceTerm`
-  - to replace all: use `/g` at end
-  - to confirm: use `/c` at end
-- .vimrc
-
-```
-set tabstop=2 shiftwidth=2 expandtab smarttab autoindent number mouse=n list listchars=lead:·,trail:·,tab:»␣
-hi SpecialKey ctermfg=DarkGray
-```
 
 # git
 
