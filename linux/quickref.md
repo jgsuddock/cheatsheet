@@ -2,52 +2,10 @@
 
 - [troubleshooting](linux.md#troubleshooting)
 - [directories](linux.md#directories)
-- [bash](#bash)
+- [bash](bash.md#commands)
 - [tmux](#tmux)
 - [vim](#vim)
 - [git](#git)
-
-# bash
-
-[bash cheatsheet](bash.md)
-
-- move
-  - start: `Ctrl + A`
-  - end: `Ctrl + E`
-  - back char: `Ctrl + B`
-  - back word: `Alt + B`
-  - forward char: `Ctrl + F`
-  - forward word: `Alt + F`
-  - toggle first and current: `Ctrl + XX`
-- edit
-  - cut next char: `Ctrl + D`
-  - cut to start of word: `Ctrl + W`
-  - cut to end of word: `Alt + D`
-  - cut before cursor: `Ctrl + U`
-  - cut after cursor: `Ctrl + K`
-  - cut whole line: `Ctrl + A` `Ctrl + K` or `Ctrl + E` `Ctrl + U`
-  - paste: `Ctrl + Y`
-  - undo: `Ctrl + _`
-  - cancel: `Ctrl + C`
-  - comment line: `Alt + Shift + #`
-- scroll
-  - up one line: `Ctrl + Shift + Up`
-  - up one page: `Ctrl + Shift + PageUp`
-  - down one line: `Ctrl + Shift + Down`
-  - down one page: `Ctrl + Shift + PageDown`
-- history: `history` or `history 20`
-  - reissue last command: `!!` or `sudo !!`
-  - reissue command by id: `!1660`
-  - previous: `Up` or `Ctrl + P`
-  - next: `Down` or `Ctrl + N`
-  - end: `Alt + Shift + .`
-  - start: `Alt + Shift + ,`
-  - search up: `Ctrl + R`
-  - search down: `Ctrl + S`
-  - select search: `Ctrl + J`
-  - cancel search: `Ctrl + G`
-  - new empty command: `Ctrl + Alt + >`
-- clear terminal: `Ctrl + L`
 
 # tmux
 
