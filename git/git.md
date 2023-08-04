@@ -69,6 +69,10 @@ git config merge.tool vimdiff
 git config merge.tool bc4
 ```
 
+- list branches merged into master: `git branch --merged master` (local) or `git branch -r --merged master` (remote) or `git branch -a --merged master` (all)
+- list branches merged into HEAD (i.e. tip of current branch): `git branch --merged`
+- list branches that have not been merged: `git branch --no-merged`
+
 ## Diff
 
 ```bash
