@@ -1,11 +1,23 @@
 # Bash
 
-- [Cheatsheet](#cheatsheet)
 - [Resources](#resources)
-- [Scripting](#scripting)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
+- [Scripting](#scripting)
+  - [Variables](#variables)
+  - [Conditionals](#conditionals)
+  - [Shifting Arguments](#shifting-arguments)
+  - [Exit Codes](#exit-codes)
+  - [Silence Output](#silence-output)
 
-## Cheatsheet
+## Resources
+
+[Linux Cheatsheet](linux.md)
+
+[Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
+
+[Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/)
+
+## Keyboard Shortcuts
 
 - move
   - start: `Ctrl + A`
@@ -45,125 +57,68 @@
   - new empty command: `Ctrl + Alt + >`
 - clear terminal: `Ctrl + L`
 
-## Resources
-
-[Linux Cheatsheet](linux.md)
-
-[Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
-
-[Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/)
-
 ## Scripting
 
-```bash
-# Conditionals
+### Variables
 
--n
-   string is not null.
+- get variable: `$VARIABLE` or `${VARIABLE}`
+- get variable or get default if null or not set: `${VARIABLE:-default}`
+- get variable or assign default if null or not set: `${VARIABLE:=default}`
 
--z
-  string is null, that is, has zero length
+### Conditionals
 
-[ -n "$foo" ]
+- condition not true: `! conditional` or `! [ conditional ]`
+- strings
+  - length is zero: `-z`
+  - length is non-zero: `-n`
+  - equal: `s1 -eq s2` or `s1 = s2`
+  - not equal: `s1 -ne s2` or `s1 != s2`
+  - s1 < s2: `s1 -lt s2` or `s1 < s2`
+  - s1 <= s1: `s1 -le s2`
+  - s1 > s2: `s1 -gt s2` or `s1 > s2`
+  - s1 >= s2: `s1 -ge s2`
+- files
+  - exists: `-a` or `-e`
+  - directory: `-d`
+  - regular file: `-f`
+  - symbolic link: `-h` or `-L`
+  - block special file: `-b`
+  - character special file: `-c`
+  - named pipe (FIFO): `-p`
+  - socket: `-S`
+  - readable: `-r`
+  - writable: `-w`
+  - executable: `-x`
+  - size greater than zero: `-s`
+  - modified since it was last read: `-N`
+  - set-group-id bit set: `-g`
+  - set-user-id bit is set: `-u`
+  - "sticky" bit set: `-k`
+  - owned by effective group id: `-G`
+  - owned by effective user id: `-O`
+  - f1 and f2 refer to the same device and inode numbers:  `f1 -ef f2`
+  - f1 is newer (mod date) or f1 exists and f2 does not: `f1 -nt f2`
+  - f2 is newer (mod date) or f2 exists and f1 does not: `f1 -ot f2`
+- file descriptor
+  - open and refers to a terminal: `-t`
+- shell options
+  - enabled: `-o`
+- shell variables
+  - set and assigned a value: `-v`
+  - set and is name reference: `-R`
 
-# Shift the scripts arguments
-shift # $2 becomes $1
-shift 2 # $3 becomes $1
+### Shifting Arguments
 
-# Exit code of last run. '0' if success, '1' if failed.
-$?
+- remove first argument: `shift`
+- remove first n arguments(s): `shift n`
 
-# To get the assigned value, or default if it's missing:
-FOO="${VARIABLE:-default}"  # If variable not set or null, use default.
-# If VARIABLE was unset or null, it still is after this (no assignment done).
+### Exit Codes
 
-# Or to assign default to VARIABLE at the same time:
-FOO="${VARIABLE:=default}"  # If variable not set or null, set it to default.
-```
-
-- conditionals:
-  - `-a file`: True if file exists.
-  - `-b file`: True if file exists and is a block special file.
-  - `-c file`: True if file exists and is a character special file.
-  - `-d file`: True if file exists and is a directory.
-  - `-e file`: True if file exists.
-  - `-f file`: True if file exists and is a regular file.
-  - `-g file`: True if file exists and its set-group-id bit is set.
-  - `-h file`: True if file exists and is a symbolic link.
-  - `-k file`: True if file exists and its "sticky" bit is set.
-  - `-p file`: True if file exists and is a named pipe (FIFO).
-  - `-r file`: True if file exists and is readable.
-  - `-s file`: True if file exists and has a size greater than zero.
-  - `-t fd`: True if file descriptor fd is open and refers to a terminal.
-  - `-u file`: True if file exists and its set-user-id bit is set.
-  - `-w file`: True if file exists and is writable.
-  - `-x file`: True if file exists and is executable.
-  - `-G file`: True if file exists and is owned by the effective group id.
-  - `-L file`: True if file exists and is a symbolic link.
-  - `-N file`: True if file exists and has been modified since it was last read.
-  - `-O file`: True if file exists and is owned by the effective user id.
-  - `-S file`: True if file exists and is a socket.
-  - `file1 -ef file2`: True if file1 and file2 refer to the same device and inode numbers.
-  - `file1 -nt file2`: True if file1 is newer (according to modification date) than file2, or if file1 exists and file2 does not.
-  - `file1 -ot file2`: True if file1 is older than file2, or if file2 exists and file1 does not.
-  - `-o optname`: True if the shell option optname is enabled. The list of options appears in the description of the -o option to the set builtin (see The Set Builtin).
-  - `-v varname`: True if the shell variable varname is set (has been assigned a value).
-  - `-R varname`: True if the shell variable varname is set and is a name reference.
-  - `-z string`: True if the length of string is zero.
-  - `-n string`: True if the length of string is non-zero.
-  - `string1 -eq string2` or `string1 = string2`: True if the strings are equal.
-  - `string1 -ne string2` or `string1 != string2`: True if the strings are not equal.
-  - `string1 -lt string2` or `string1 < string2`: True if string1 sorts before string2 lexicographically.
-  - `string1 -le string2`: True if string1 sorts before string2 lexicographically or if the strings are equal.
-  - `string1 -gt string2` or `string1 > string2`: True if string1 sorts after string2 lexicographically.
-  - `string1 -ge string2`: True if string1 sorts after string2 lexicographically or if the strings are equal.
+- get last command's exit code: `$?`
 
 ### Silence Output
 
-```bash
-# Silence stdout
-command 1> /dev/null
-#   or
-command > /dev/null
-
-# Silence stderr
-command 2> /dev/null
-
-# Send stderr to stdout
-command 2>&1
-
-# Silence stdout and stderr (this sends stderr to stdout)
-command > /dev/null 2>&1
-
-# Silence stdout and stderr - Bash (>= v4) shortcut
-command &> /dev/null
-```
-
-## Keyboard Shortcuts
-
-| Action | Keyboard Shortcut |
-| --- | --- |
-| Move cursor to start of line | `Ctrl + A` |
-| Move cursor to end of line | `Ctrl + E` |
-| Move back one character | `Ctrl + B` |
-| Move back one word | `Alt + B` |
-| Move forward one character | `Ctrl + F` |
-| Move forward one word | `Alt + F` |
-| Toggle between first and current position | `Ctrl + XX` |
-| Delete current character | `Ctrl + D` |
-| Cut from cursor to start of word | `Ctrl + W` |
-| Cut from cursor to end of word | `Alt + D` |
-| Cut everything before the cursor | `Ctrl + U` |
-| Cut everything after the cursor | `Ctrl + K` |
-| Clean up the line | `Ctrl + E` `Ctrl + U` |
-| Cancel the command | `Ctrl + C` |
-| Paste the last deleted command | `Ctrl + Y` |
-| Undo | `Ctrl + _` |
-| Save Current Line As Comment | `Alt + Shift + #` |
-| Clear the terminal | `Ctrl + L` |
-| Search command in history - type the search term | `Ctrl + R` |
-| End the search at current history entry | `Ctrl + J` |
-| Cancel the search and restore original line | `Ctrl + G` |
-| Next command from the History | `Ctrl + N` |
-| Previous command from the History | `Ctrl + P` |
-| Stop Searching History (Return to Blank Line) | `Ctrl + Alt + >` |
+- silence stdout: `command 1> /dev/null` or `command > /dev/null`
+- silence stderr: `command 2>&1`
+- silence stdout and stderr: `command > /dev/null 2>&1` or `command &> /dev/null` (bash >= v4)
+- send stderr to stdout: `command 2>&1`
