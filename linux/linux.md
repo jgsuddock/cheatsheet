@@ -120,6 +120,9 @@ for i in $(helm ls -a -o json | jq -r '.[].name'); do helm delete $i; done
 ### File/Directory Ownership
 
 ```bash
+# Lookup up ownership of directory/file
+ls -l path/to/directory_or_file
+
 # Change ownership of directory to certain user and group
 sudo chown username:group directory
 
@@ -129,7 +132,12 @@ sudo chown -R username:group directory
 
 ### File/Directory Read/Write/Execute Permissions
 
+Reading/Changing Permissions:
+
 ```bash
+# Lookup up ownership of directory/file
+ls -l path/to/directory_or_file
+
 # Change permissions of directory to (drwxrwxrwx)
 sudo chmod 777 directory
 
@@ -137,7 +145,11 @@ sudo chmod 777 directory
 sudo chmod 755 directory
 ```
 
-`drwxrwxrwx` ==> `d` - File Type | `rwx` - User/Owner | `rwx` - Group | `rwx` - Others
+Permission Notation (`drwxrwxrwx`):
+
+| d | rwx | rwx | rwx |
+| --- | --- | --- | --- |
+| File Type | User/Owner | Group | Others |
 
 File Types:
 
