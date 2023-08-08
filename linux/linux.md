@@ -43,6 +43,9 @@
   - directory size: `du -sh /var/logs`
   - directory size (breakout): `du -ah --max-depth=1 /var`
   - swap: `swapon --show size`
+- memory
+  - memory usage: `free -m`
+  - processes: `htop`
 - services
   - status: `systemctl status nginx` (new) or `service nginx status` (old)
   - logging: `journalctl -u tomcat.service --since today` or `journalctl _PID=1234`
