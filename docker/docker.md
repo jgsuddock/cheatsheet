@@ -12,6 +12,28 @@
 
 ## Run
 
+`docker run`
+- `--name container_name`: What should the container be named once it is running (makes one up if not supplied)
+- `--env ENV_NAME=ENV_VALUE`: Sets the environment variable ENV_NAME to ENV_VALUE in running container
+- `--volume /path/on/local/pc:/path/within/container`: Maps local path to container's path
+- `-it`: Run the container interactive
+- `-d`: Run the container as a daemon process
+- `--rm`: Remove container after it is stopped
+- `--pull=always`: Ensure the latest image from the server is used
+- `image_name:tag_name_or_latest`: Examples - "python:3" or "hub.garmin.com/python:3"
+
+```bash
+docker run
+  --name container_name # What should the container be named once it is running (makes one up if not supplied)
+  --env ENV_NAME=ENV_VALUE # Sets the environment variable ENV_NAME to ENV_VALUE in running container
+  --volume /path/on/local/pc:/path/within/container # Maps local path to container's path
+  -it # Run the container interactive
+  -d # Run the container as a daemon process
+  --rm # Remove container after it is stopped
+  --pull=always # Ensure the latest image from the server is used
+  image_name:tag_name_or_latest # python:3 or hub.garmin.com/python:3
+```
+
 ```bash
 # Pull python3 container, exec into it, then remove container once exited
 docker run -it --rm --pull=always python3:latest
