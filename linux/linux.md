@@ -43,14 +43,16 @@
   - directory size: `du -sh /var/logs`
   - directory size (breakout): `du -ah --max-depth=1 /var`
   - swap: `swapon --show size`
+  - open files: `lsof +L1` (won't show full size in du)
 - memory
   - memory usage: `free -m`
-  - processes: `htop`
 - services
   - status: `systemctl status nginx` (new) or `service nginx status` (old)
   - logging: `journalctl -u tomcat.service --since today` or `journalctl _PID=1234`
   - cronjob edit: `crontab -e`
-- processes: `htop` or `ps aux`
+- processes:
+  - manager: `htop` or `top`
+  - list: `ps aux`
 - search
   - file names: `find . -name *.jpg`
   - files older than 60 min: `find . -mmin +60 -type f`
