@@ -53,6 +53,8 @@
 - processes:
   - manager: `htop` or `top`
   - list: `ps aux`
+  - used ports: `netstat -lpn` or `netstat -tulpn` (tcp/udp only)
+  - listening tcp ports: `lsof -nP -iTCP -sTCP:LISTEN`
 - search
   - file names: `find . -name *.jpg`
   - files older than 60 min: `find . -mmin +60 -type f`
