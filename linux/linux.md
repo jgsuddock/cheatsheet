@@ -297,7 +297,7 @@ htop
 top
 ```
 
-Add/Rearrange/Sort Fields
+Add/Rearrange/Sort Fields:
 
 1. Press `F` to display field listing
 2. Press `Up Arrow` or `Down Arrow` to move cursor.
@@ -309,6 +309,10 @@ Add/Rearrange/Sort Fields
 Sort By Memory:
 
 1. Press `Shift + M` or use the argument `top -o %MEM`
+
+Thread View:
+
+1. Press `T` to view thread view
 
 ### Init System
 
