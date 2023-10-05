@@ -45,7 +45,8 @@
   - swap: `swapon --show size`
   - open files: `lsof +L1` (won't show full size in du)
 - memory
-  - memory usage: `free -m`
+  - memory usage: `free -m` or `free -h` (human readable)
+  - memory usage (top 10): `ps aux --sort=-%mem | head`
 - services
   - status: `systemctl status nginx` (new) or `service nginx status` (old)
   - logging: `journalctl -u tomcat.service --since today` or `journalctl _PID=1234`
@@ -63,8 +64,8 @@
   - files containing keyword: `grep --include=\*.{c,h} -Rnw '/path/to/dir' -e 'TEXT_TO_FIND'`
   - files containing keyword: `find . -type f -name "*.xml" | xargs egrep -i 'TEXT_TO_FIND'`
 - symlinks
-  - file: `ln -s /points/here.txt here.txt`
-  - dir: `ln -sn /points/here here`
+  - file: `ln -s /points/here.txt from-here.txt` or `-sf` (force)
+  - dir: `ln -sn /points/here from-here` or `-snf` (force)
 - mounts:
   - list: `mount`
   - add: `mount /dev/sda1`
