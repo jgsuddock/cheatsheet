@@ -45,8 +45,10 @@
   - swap: `swapon --show size`
   - open files: `lsof +L1` (won't show full size in du)
 - memory
-  - memory usage: `free -m` or `free -h` (human readable)
-  - memory usage (top 10): `ps aux --sort=-%mem | head`
+  - usage: `free -m` or `free -h` (human readable)
+  - usage (top 10): `ps aux --sort=-%mem | head`
+- cpu
+  - config: `lscpu`
 - services
   - status: `systemctl status nginx` (new) or `service nginx status` (old)
   - logging: `journalctl -u tomcat.service --since today` or `journalctl _PID=1234`
