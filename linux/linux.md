@@ -81,8 +81,8 @@
   - reboots: `last reboot` or `last reboot -s today` (only today)
   - uptime: `uptime`
 - gzip
-  - compress: `tar -czvf archive.tar.gz /path/to/directory-or-file`
-  - extract: `tar -xvf archive.tar.gz -C /path/to/new-directory-or-file`
+  - compress: `tar -czvf archive.tar.gz directory-or-file` or `tar -czvf archive.tar.gz /path/to/directory-or-file` (remembers full path when extracted)
+  - extract: `tar -xvf archive.tar.gz -C /path/to/new-directory-or-file` (/path/to/new-directory-or-file/archive)
 - manuals: `man netstat`
 
 ## Resources
