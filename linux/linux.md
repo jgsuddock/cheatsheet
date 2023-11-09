@@ -41,7 +41,7 @@
 - storage
   - disk space: `df -ah` or `vgs` (disk space in volume)
   - directory size: `du -sh /var/logs`
-  - directory size (breakout): `du -ah --max-depth=1 /var`
+  - directory size (breakout): `du -ah --max-depth=1 /var` or `du -ahd 1 /var`
   - swap: `swapon --show size`
   - open files: `lsof +L1` (won't show full size in du)
 - memory
