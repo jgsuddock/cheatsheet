@@ -24,7 +24,6 @@
   - visual block mode: `Ctrl + V`
   - decrease indent: `<<`
   - increase indent: `>>`
-  - run shell command: `:!ls /dir`
 - search
   - start: `/SearchTerm`
   - next: `N`
@@ -35,6 +34,12 @@
   - next in file: `:%s/SearchTerm/ReplaceTerm`
   - to replace all: use `/g` at end
   - to confirm: use `/c` at end
+- shell
+  - run command: `:!ls /dir`
+  - start subshell: `:sh` or `:!bash`
+- session
+  - suspend: `Ctrl + Z`
+  - resume: `fg`
 - .vimrc
 
 ```
