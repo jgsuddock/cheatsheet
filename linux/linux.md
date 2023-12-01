@@ -65,6 +65,9 @@
   - files containing keyword: `grep -Rnw '/path/to/dir' -e 'TEXT_TO_FIND'`
   - files containing keyword: `grep --include=\*.{c,h} -Rnw '/path/to/dir' -e 'TEXT_TO_FIND'`
   - files containing keyword: `find . -type f -name "*.xml" | xargs egrep -i 'TEXT_TO_FIND'`
+- files:
+  - create file: `touch file.txt`
+  - empty file: `truncate -s0 file.txt`
 - symlinks
   - file: `ln -s /points/here.txt from-here.txt` or `-sf` (force)
   - dir: `ln -sn /points/here from-here` or `-snf` (force)
