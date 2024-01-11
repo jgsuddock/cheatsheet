@@ -1,0 +1,31 @@
+# SSH Cheatsheet
+
+- [Generating Keys](#generating-keys)
+- [Authorized Keys](#authorized-keys)
+- [Permissions](#permissions)
+
+## Generating Keys
+
+TODO
+
+## Authorized Keys
+
+To use SSH keys to login to another box, you can use authorized keys.
+
+1. Copy the public key (probably in ~/.ssh/id_rsa.pub) from the box you want to SSH from
+2. Create a new file in your ssh directory called authorized_keys (~/.ssh/authorized_keys)
+3. In that new file, paste the contents from the public key from the source box.
+4. Test connection: `ssh USERNAME@HOSTNAME`
+  a. If issues occur, you can try running `ssh -vvv USERNAME@HOSTNAME` to debug the issues
+
+## Permissions
+
+The permissions for your ssh directory should be as follows:
+
+| Directory | Permission |
+|---|---|
+|~/.ssh|700|
+|~/.ssh/id_rsa|600|
+|~/.ssh/id_rsa.pub|644|
+|~/.ssh/known_hosts|644|
+|~/.ssh/authorized_keys|644|
