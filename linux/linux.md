@@ -393,6 +393,11 @@ ls /etc/rc*.d/
 
 # View tomcat service config
 vim /etc/inti.d/tomcat
+
+# Enable/disable services
+sudo chkconfig --list         # list all services and their enabled state
+sudo chkconfig SERVICE on     # enable SERVICE
+sudo chkconfig SERVICE off    # disable SERVICE
 ```
 
 #### Upstart
