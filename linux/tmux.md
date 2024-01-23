@@ -33,6 +33,7 @@
 - panes (include bind `Ctrl + B`)
   - new (vertical): `%`
   - new (horizontal): `"`
+  - switch: `arrow keys`
   - swap: `O`
   - kill: `X`
   - break into window: `+`
