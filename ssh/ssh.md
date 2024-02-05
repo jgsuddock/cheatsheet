@@ -6,7 +6,9 @@
 
 ## Generating Keys
 
-TODO
+1. Backup the keys in ~/.ssh (id_rsa, id_rsa.pub, id_ed25519, id_ed25519.pub, etc)
+2. Change directory to ~/.ssh
+3. Generate new key: `ssh-keygen -t rsa -b 4096` or `ssh-keygetn -t ed25519`
 
 ## Authorized Keys
 
