@@ -37,6 +37,10 @@
 - shell
   - run command: `:!ls /dir`
   - start subshell: `:sh` or `:!bash`
+- macros
+  - record: `q1` (register 1)
+  - stop record: `q`
+  - run: `@1` or `10@1` run 10 times
 - session
   - suspend: `Ctrl + Z`
   - resume: `fg`
