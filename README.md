@@ -23,6 +23,7 @@ Personal cheat sheets for various technologies
 - [git](git/git.md)
 - [python scripts](python/scripts.md)
 - [salt](salt/salt.md)
+- [ssh](ssh/ssh.md)
 - [tmux](tmux/tmux.md)
 - [vim](vim/vim.md)
 
