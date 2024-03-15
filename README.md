@@ -16,17 +16,18 @@ Personal cheat sheets for various technologies
 - [cmd](windows/cmd.md)
 - [editors](windows/editors.md)
 
+### Tools
+
+- [curl](networking/curl.md)
+- [docker](docker/docker.md)
+- [git](git/git.md)
+- [python scripts](python/scripts.md)
+- [salt](salt/salt.md)
+- [tmux](tmux/tmux.md)
+- [vim](vim/vim.md)
+
 ### Networking
 
 - [networking](networking/networking.md)
 - [apache](networking/apache.md)
 - [tomcat](networking/tomcat.md)
-
-### Tools
-
-- [tmux](tmux/tmux.md)
-- [vim](vim/vim.md)
-- [git](git/git.md)
-- [docker](docker/docker.md)
-- [salt](salt/salt.md)
-- [python scripts](python/scripts.md)
