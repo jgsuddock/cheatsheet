@@ -24,8 +24,8 @@ Personal cheat sheets for various technologies
 
 ### Tools
 
-- [tmux](linux/tmux.md)
-- [vim](linux/vim.md)
+- [tmux](tmux/tmux.md)
+- [vim](vim/vim.md)
 - [git](git/git.md)
 - [docker](docker/docker.md)
 - [salt](salt/salt.md)
