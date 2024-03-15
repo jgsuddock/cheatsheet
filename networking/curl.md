@@ -20,8 +20,16 @@ Download Request
 curl -O https://example.com/robots.txt
 ```
 
-## Request Headers
+## Arguments
+
+Request Headers
 
 ```bash
 curl --header 'Host: example.com' https://12.34.56.78
+```
+
+Include Status Code In Output
+
+```bash
+curl -i https://12.34.56.78
 ```
