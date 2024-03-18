@@ -129,6 +129,80 @@ cat /path/to/file.xml | sed -re 's/>/>\n/g' | sort -u | less
 for i in $(helm ls -a -o json | jq -r '.[].name'); do helm delete $i; done
 ```
 
+## Users/Groups
+
+```bash
+# List users
+cat /etc/passwd
+
+# Check if user exists (preferred)
+getent passwd USERNAME
+getent passwd USERID
+
+# Check if user exists (optional)
+grep USERNAME /etc/passwd
+
+# List groups
+cat /etc/group
+
+# Check if group exists (preferred)
+getent group GROUPNAME
+getent group GROUPID
+
+# Check if group exists (optional)
+grep GROUPNAME /etc/group
+
+# Check what groups a user is in
+groups USERNAME
+
+
+```
+
+Creating Users
+
+```bash
+# Add new user
+useradd USERNAME
+
+# Add new user with gid 345
+useradd -g 345 USERNAME
+
+# Add new user and setup home directory (/home/USERNAME)
+useradd -m USERNAME
+
+# Add new user and add user to group
+useradd -G GROUP USERNAME
+
+# Add new system user
+useradd -r USERNAME
+```
+
+Deleting Users
+
+```bash
+userdel USERNAME
+
+# If user has a home dir, manually remove after user deleted
+rm -rf /home/USERNAME
+```
+
+Creating Groups
+
+```bash
+groupadd GROUPNAME
+```
+
+Deleting Groups
+
+```bash
+groupdel GROUPNAME
+```
+
+Adding User To Group
+```bash
+groupmod -a -U USERNAME GROUPNAME
+```
+
 ## Permissions
 
 ### File/Directory Ownership
