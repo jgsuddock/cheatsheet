@@ -18,6 +18,7 @@
 - Re-scan the file for differences: `:diffupdate`
 - Get a diff of files on buffers: `:diffthis`
 - Return to normal mode: `:diffoff`
+- change color scheme: `:colorscheme murphy` or `:colorscheme ` + `Tab` to see options
 
 ## Windows
 
