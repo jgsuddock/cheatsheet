@@ -24,6 +24,9 @@
   - visual block mode: `Ctrl + V`
   - decrease indent: `<<`
   - increase indent: `>>`
+- scrolling:
+  - half page up: `Ctrl + U`
+  - half page down: `Ctrl + D`
 - search
   - start: `/SearchTerm`
   - next: `N`
