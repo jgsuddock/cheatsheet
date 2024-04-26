@@ -69,6 +69,7 @@
 - files:
   - create file: `touch file.txt`
   - empty file: `truncate -s0 file.txt`
+  - live logs: `tail -f file.txt`
 - symlinks
   - file: `ln -s /points/here.txt from-here.txt` or `-sf` (force)
   - dir: `ln -sn /points/here from-here` or `-snf` (force)
