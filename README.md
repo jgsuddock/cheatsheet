@@ -21,6 +21,7 @@ Personal cheat sheets for various technologies
 - [curl](networking/curl.md)
 - [docker](docker/docker.md)
 - [git](git/git.md)
+- [jenkins](jenkins/jenkins.md)
 - [python scripts](python/scripts.md)
 - [salt](salt/salt.md)
 - [ssh](ssh/ssh.md)
