@@ -24,6 +24,10 @@
   - visual block mode: `Ctrl + V`
   - decrease indent: `<<`
   - increase indent: `>>`
+- edit mode:
+  - change: `c`
+  - delete: `d`
+  - change inside html tags: `cit`
 - scrolling:
   - half page up: `Ctrl + U`
   - half page down: `Ctrl + D`
