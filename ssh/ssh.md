@@ -20,6 +20,11 @@ To use SSH keys to login to another box, you can use authorized keys.
 4. Test connection: `ssh USERNAME@HOSTNAME`
   a. If issues occur, you can try running `ssh -vvv USERNAME@HOSTNAME` to debug the issues
 
+## Fix Known Hosts Keys
+
+1. Get key for server: `ssh-keyscan -t rsa -p server_port server_ip`
+2. Edit known hosts file and add new key: `vim ~/.ssh/known_hosts`
+
 ## Permissions
 
 The permissions for your ssh directory should be as follows:
