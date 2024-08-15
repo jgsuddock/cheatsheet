@@ -1,5 +1,9 @@
 # Jenkins Cheatsheet
 
+## Jenkins Pipelines
+
+Pipeline syntax helper tool: `http://<jenkins-url>/pipeline-syntax/`
+
 ## Jenkins Scripting
 
 For each, navigate to `http://<jenkins-url>/sript` and run script
