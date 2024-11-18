@@ -88,6 +88,7 @@
 - gzip
   - compress: `tar -czvf archive.tar.gz directory-or-file` or `tar -czvf archive.tar.gz /path/to/directory-or-file` (remembers full path when extracted)
   - extract: `tar -xvf archive.tar.gz -C /path/to/new-directory-or-file` (/path/to/new-directory-or-file/archive)
+  - read: `zcat archive-file.gz` or `zcat archive-file.gz | vim -` (open in vim)
 - manuals: `man netstat`
 
 ## Resources
