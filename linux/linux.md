@@ -81,6 +81,10 @@
   - owner: `chown username:group file.txt` or `chown -R username:group directory` (recurse)
   - read/write: `chmod 755 directory` (rwx > owner|group|others)
   - check: `ls -l file.txt`
+- immutable:
+  - check: `lsattr file.txt`
+  - set: `chattr +i file.txt`
+  - remove: `chattr -i file.txt`
 - history
   - logins: `last` or `last -n 5`
   - reboots: `last reboot` or `last reboot -s today` (only today)
