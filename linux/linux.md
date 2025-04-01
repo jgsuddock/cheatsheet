@@ -52,6 +52,7 @@
   - config: `lscpu`
 - services
   - status: `systemctl status nginx` (new) or `service nginx status` (old)
+  - list: `systemctl list-unit-files` or `systemctl list-unit-files | grep enabled`
   - logging: `journalctl -u tomcat.service --since today` or `journalctl _PID=1234`
   - cronjob edit: `crontab -e`
 - processes:
