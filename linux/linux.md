@@ -38,6 +38,8 @@
   - test tcp: `nc -vz google.com 80,443`
   - status code: `curl -sS "https://localhost:8080/animals"`
   - download file: `curl -O "https://www.digitalocean.com/robots.txt"`
+  - host headers: `curl -H 'Host: fakename.com' https://1.2.3.4/path`
+  - override dns: `curl https://fakename.com/path --resolve fakename.com:443:1.2.3.4`
 - storage
   - disk space: `df -ah` or `vgs` (disk space in volume)
   - disk allocation: `pvdisplay -m`
@@ -96,6 +98,7 @@
   - read: `zcat archive-file.gz` or `zcat archive-file.gz | vim -` (open in vim)
 - certs
   - check server cert: `openssl s_client -connect example.com:443 -servername example.com </dev/null | openssl x509 -in /dev/stdin -noout -text`
+  - check local cert: `openssl x509 -in cert.txt -noout -text`
 - manuals: `man netstat`
 
 ## Resources
