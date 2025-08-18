@@ -23,6 +23,9 @@ salt  'name*' state.enable highstate
 
 # List all currently disabled boxes
 salt '*' state.list_disabled
+
+# List all currently disabled boxes - Filtered to only disabled boxes
+salt '*' state.list_disabled | grep -B 1 'highstate'
 ```
 
 ### Execute Commands On Minions
