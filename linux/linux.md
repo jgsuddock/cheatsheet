@@ -46,7 +46,7 @@
   - directory size: `du -sh /var/logs`
   - directory size (breakout): `du -ah --max-depth=1 /var` or `du -ahd 1 /var`
   - swap: `swapon --show size`
-  - open files: `lsof +L1` (won't show full size in du)
+  - deleted files: `lsof +L1` (won't show full size in du)
 - memory
   - usage: `free -m` or `free -h` (human readable)
   - usage (top 10): `ps aux --sort=-%mem | head`
